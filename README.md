@@ -2,4 +2,5 @@
 
 Piccolo e-Book con una lista di cose da studiare per la mia posizione da Back-end developer.
 
-[Dai un'occhiata ora](index.html)
+)
+[Dai un'occhiata ora]()
