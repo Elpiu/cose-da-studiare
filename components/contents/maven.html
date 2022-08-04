@@ -2,107 +2,157 @@
 <div class="row">
   <div class="col-4">
     <div class="list-group list-group-light" id="list-tab" role="tablist">
-      <a
-        class="list-group-item list-group-item-action active px-3 border-0"
-        id="list-home-list"
-        data-mdb-toggle="list"
-        href="#list-home"
-        role="tab"
-        aria-controls="list-home"
-        >Cos'è</a
-      >
-      <a
-        class="list-group-item list-group-item-action px-3 border-0"
-        id="list-profile-list"
-        data-mdb-toggle="list"
-        href="#list-profile"
-        role="tab"
-        aria-controls="list-profile"
-        >Profile</a
-      >
-      <a
-        class="list-group-item list-group-item-action px-3 border-0"
-        id="list-messages-list"
-        data-mdb-toggle="list"
-        href="#list-messages"
-        role="tab"
-        aria-controls="list-messages"
-        >Messages</a
-      >
-      <a
-        class="list-group-item list-group-item-action px-3 border-0"
-        id="list-settings-list"
-        data-mdb-toggle="list"
-        href="#list-settings"
-        role="tab"
-        aria-controls="list-settings"
-        >Settings</a
-      >
+      <a class="list-group-item list-group-item-action active px-3 border-0" id="list-intro-list" data-mdb-toggle="list"
+        href="#list-intro" role="tab" aria-controls="list-intro">Introduzione</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p1-list" data-mdb-toggle="list"
+        href="#list-p1" role="tab" aria-controls="list-p1">Perchè usare Maven</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p2-list" data-mdb-toggle="list"
+        href="#list-p2" role="tab" aria-controls="list-p2">Project Object Model</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p3-list" data-mdb-toggle="list"
+        href="#list-p3" role="tab" aria-controls="list-p3">Dipendenze</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p4-list" data-mdb-toggle="list"
+        href="#list-p4" role="tab" aria-controls="list-p4">Repository</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p5-list" data-mdb-toggle="list"
+        href="#list-p5" role="tab" aria-controls="list-p5">Proprietà Build e Profili</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p6-list" data-mdb-toggle="list"
+        href="#list-p6" role="tab" aria-controls="list-p6">Maven build e ciclo di vita</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p7-list" data-mdb-toggle="list"
+        href="#list-p7" role="tab" aria-controls="list-p7">Multi-Module Project e BOM</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p8-list" data-mdb-toggle="list"
+        href="#list-p8" role="tab" aria-controls="list-p8">Vari Test Fatti</a>
     </div>
   </div>
   <div class="col-8">
     <div class="tab-content" id="nav-tabContent">
-      <div
-        class="tab-pane fade show active"
-        id="list-home"
-        role="tabpanel"
-        aria-labelledby="list-home-list"
-      >
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore impedit
-        quibusdam exercitationem eligendi voluptate doloribus non pariatur
-        libero quod nobis mollitia odio dolore eos debitis iure, autem quisquam
-        ullam beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Labore impedit quibusdam exercitationem eligendi voluptate doloribus non
-        pariatur libero quod nobis mollitia odio dolore eos debitis iure, autem
-        quisquam ullam beatae. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Labore impedit quibusdam exercitationem eligendi
-        voluptate doloribus non pariatur libero quod nobis mollitia odio dolore
-        eos debitis iure, autem quisquam ullam beatae. Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Labore impedit quibusdam
-        exercitationem eligendi voluptate doloribus non pariatur libero quod
-        nobis mollitia odio dolore eos debitis iure, autem quisquam ullam
-        beatae. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore
-        impedit quibusdam exercitationem eligendi voluptate doloribus non
-        pariatur libero quod nobis mollitia odio dolore eos debitis iure, autem
-        quisquam ullam beatae. Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Labore impedit quibusdam exercitationem eligendi
-        voluptate doloribus non pariatur libero quod nobis mollitia odio dolore
-        eos debitis iure, autem quisquam ullam beatae. Lorem ipsum dolor sit
-        amet consectetur adipisicing elit. Labore impedit quibusdam
-        exercitationem eligendi voluptate doloribus non pariatur libero quod
-        nobis mollitia odio dolore eos debitis iure, autem quisquam ullam
-        beatae.
+      <div class="tab-pane fade show active" id="list-intro" role="tabpanel" aria-labelledby="list-home-list">
+        <p>
+        Nei progetti software tipicamente ci si imbatte in task come il download
+        di dipendenze, inserimento di jar addizionali nei classpath,
+        compilazione di codice sorgente in codice binario, lancio di test,
+        packaging di codice per il deploy come JAR, WAR e ZIP, e il deploy di
+        quest'ultimi in un application server o una repositoy.
+      </p>
+      <p>
+        Apache Maven automatizza questi task, minimizzando il rischio umano di
+        fare errori quando si fa la build del software manualmente e separare il
+        lavoro di compilazione e packaging dalla scrittura del codice in sé.
+      </p>
+      <p>
+        Maven utilizza il POM Project Object Model - scritto in linguaggio XML.
+      </p>
       </div>
-      <div
-        class="tab-pane fade"
-        id="list-profile"
-        role="tabpanel"
-        aria-labelledby="list-profile-list"
-      >
-        Ea eos asperiores deserunt reprehenderit voluptatem deleniti dolor iure
-        eum consectetur commodi.
+      <div class="tab-pane fade" id="list-p1" role="tabpanel" aria-labelledby="list-p1-list">
+        <p class="note note-success ">
+          <strong>
+            Le funzioni chiave di maven sono:
+          </strong>
+        </p>
+
+        <ul class="list-group list-group-light">
+          <li class="list-group-item">
+            Semplificare il setup di un progetto usando le migliori pratiche,
+            Maven prova a evitare la maggior parte delle configurazioni, usando
+            i template di progetto nominati "archetypes".</li>
+          </li>
+          <li class="list-group-item">
+            Gestione delle dipendenze, include l'aggiornamento automatico, download e convalida, oltre a segnalare la
+            chiusura delle dipendenze (nota come dipendenze transitive).</li>
+          <li class="list-group-item">Isolamento tra dipendenze del progetto e plugins, con Maven le diependenze del
+            progetto vengono recuperate dai repository, mentre le dipendenze di qualsiasi plug-in vengono recuperate dai
+            repository dei plugin, determinando meno conflitti quando i plugin cominciano a scaricare dipendenze
+            aggiuntive.</li>
+          <li class="list-group-item">Sistema di repository centrale, le dipendenze del progetto possono essere caricate
+            dal fle system locale o da repository pubblici come Maven Central.</li>
+        </ul>
       </div>
-      <div
-        class="tab-pane fade"
-        id="list-messages"
-        role="tabpanel"
-        aria-labelledby="list-messages-list"
-      >
-        Et perspiciatis facilis labore natus at necessitatibus. Sequi earum qui
-        illum reiciendis? Excepturi, dicta consequuntur, voluptas aspernatur,
-        quis laboriosam exercitationem quasi officia tempore iste assumenda
-        aliquam.
+      <div class="tab-pane fade" id="list-p2" role="tabpanel" aria-labelledby="list-p2-list">
+        La configurazione di un progetto Maven avviene con il POM, rappresentato dal file "pom.xml".
+        Il POM descrive il progetto, gestisce le dipendenze e le configurazioni per la build del software. Il POM
+        inoltre definisce la relazione tra i moduli di un progetto multi-modulo.
+        <br/>
+        <br/>
+        Per dichiarare una dipendenza ad una libreria esterna, bisogna indicare "groupid, artifactid e version".
+        Questi tre componenti vengono anche chiamati coordinate, sono un identificatore per distinguere univocamente una
+        libreria.
       </div>
-      <div
-        class="tab-pane fade"
-        id="list-settings"
-        role="tabpanel"
-        aria-labelledby="list-settings-list"
-      >
-        Praesentium asperiores nemo ratione quas atque excepturi odio aliquid
-        libero, architecto aspernatur expedita, corrupti, rem odit quos
-        exercitationem maxime at. Ex, eveniet rerum laborum accusamus delectus
-        magnam maxime!
+      <div class="tab-pane fade" id="list-p3" role="tabpanel" aria-labelledby="list-p3-list">
+        Le librerie esterne di un progetto vengono chiamate dipendenze.
+        La funzionalità di gestione delle dipendenze di Maven garantisce il download automatico di tali librerie da un
+        repository centrale,
+        quindi non è necessario che venfano archiviate localmente.
+        <br/>
+        <br/>
+        Questa feature di Maven porte benefici in quanto si usa meno spazio riducendo in modo significativo il numero di
+        download delle repository, velocizza il checking out di un progetto e fornisce una piattaforma efficace per lo
+        scambio di artefatti all'interno dell'organizzazione.
+      </div>
+      <div class="tab-pane fade" id="list-p4" role="tabpanel" aria-labelledby="list-p4-list">
+        Un repository di Maven viene utilizzato per contenere artefatti di build e dipendenze di vario tipo.
+        Il repository locale predefinito si trova nella cartella ".m2/repository" nella directory home dell'utente.
+        <br/>
+        <br/>
+        Se nel repository locale è disponibile un artefatto o un plugin, Maven lo utilizza. In caso contrario viene scaricato da un repository centrale.
+        Non tutte le librerie sono presenti nel repository centrale, per tali librerie sarà necessario fornire l'URL al repository alternativo all'interno del file "pom.xml".
+      </div>
+      <div class="tab-pane fade" id="list-p5" role="tabpanel" aria-labelledby="list-p5-list">
+        <p class="note note-light">
+          <strong>Proprietà:</strong> Le proprietà aiutano il file "pom.xml" sulla leggibilità e mantenibilità. 
+          Un uso classico dove utilizzare le proprietà custom è per definire le versioni per le dipendenze del progetto.
+          Le proprietà Maven sono segnaposto di valori e sono accessibili ovunque all'interno di un "pom.xml" utilizzando la notazione ${name}, dove name è la proprietà. 
+        </p>
+        <p class="note note-light">
+          <strong>Build:</strong> La Sezione build del Maven POM, fornisce informazioni sull'obiettivo Maven predefinito, la directory del progetto compilato e il nome dell'applicazione.
+        </p>
+        <p class="note note-light">
+          <strong>Profili:</strong> Un profilo banalmente è un set di configurazioni. Usando i profili si può customizzare le varie build per i differenti environment come Produzione, Test e Development.
+        </p>
+      </div>
+      <div class="tab-pane fade" id="list-p6" role="tabpanel" aria-labelledby="list-p6-list">
+        <p>Ogni build di Maven segue un ciclo di vita specifico. Possiamo eseguire diversi obiettivi del ciclo di vita della build, inclusi quelli per compilare il codice del progetto, creare un pacchetto e installare l'artefatto prodotto.</p>
+        <p>Le fasi del ciclo di vita: </p>
+        <ul class="list-group list-group-light">
+          <li class="list-group-item"><strong>validate</strong>, controlla la correttezza del progetto.</li>
+          <li class="list-group-item"><strong>compile</strong>, compila il codice sorgente fornito negli artefatti binari.</li>
+          <li class="list-group-item"><strong>test</strong>, cesegue unit test.</li>
+          <li class="list-group-item"><strong>package</strong>, packaging del codice compilato in file di archivi.</li>
+          <li class="list-group-item"><strong>integration-test</strong>, esegue test addizionali, che richiedono il packaging.</li>
+          <li class="list-group-item"><strong>verify</strong>, controlla se il package è valido.</li>
+          <li class="list-group-item"><strong>install</strong>, installa il package nella repository locale di Maven.</li>
+          <li class="list-group-item"><strong>deploy</strong>, deploy del pacchetto in un server remoto o nella repository.</li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="list-p7" role="tabpanel" aria-labelledby="list-p7-list">
+        <p>Un progetto multi modulo è costituito con l'aggregazione di POM che gestiscono un gruppo di sottomoduli. 
+          In molti casi l'aggregatore è localizzato nella project's root directory. 
+          I sottomoduli sono dei regolari progetti Maven, e possono essere buildati separatamente attraverso l'aggregatore POM. 
+          Costruendo il progetto tramite l'aggregatore POM, ogni progetto che un tipo di packaging diverso risulterà in un archivio a parte.
+        </p>
+        <p>
+          I benefici di usare questo approccio è la riduzione di duplicati. In molti casi i progetti hanno bisogno di vari plugin di Maven per eseguire le varie operazioni durante il loro build lifecycle.
+        </p>
+      
+        <p class="note note-light">
+          <strong>Submodules:</strong> I sottomoduli, o sottoprogetti, sono normali progetti Maven che ereditano dal POM padre.
+          L'ereditarietà ci permette di condividere configurazioni e dipendenze con i sottomoduli.
+        </p>
+        <p class="note note-light">
+          <strong>BOM:</strong> Bill of Materials, un tipo speciale di POM usato per controllare le versioni delle dipendenze del progetto, provvede a centralizzare in un unico posto le versioni. Il BOM offre la flessibilità di aggiungere una dipendenza al nostro modulo senza preoccuparsi della versione da cui dovranno dipendere.
+        </p>
+      </div>
+      <div class="tab-pane fade" id="list-p8" role="tabpanel" aria-labelledby="list-p8-list">
+        <p>Qui trovi i vari test effettuati.</p>
+        <p class="note note-info">
+          <strong><a href="/esercitazioni/maven/Generate simple Project Maven/">Generate simple Project Maven</a></strong>
+        </p>
+        <p class="note note-info">
+          <strong><a href="/esercitazioni/maven/Generate multi module Project Maven/">Generate multi module Project Maven</a></strong>
+        </p>
+        <p class="note note-info">
+          <strong><a href="/esercitazioni/maven/OtherMultiModuleProject/">OtherMultiModuleProject</a></strong>
+        </p>
+        <p class="note note-info">
+          <strong><a href="/esercitazioni/maven/Spring MultiModule/">Spring MultiModule</a></strong>
+        </p>
       </div>
     </div>
   </div>
