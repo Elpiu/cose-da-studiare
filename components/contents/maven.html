@@ -3,28 +3,28 @@
   <div class="col-4">
     <div class="list-group list-group-light" id="list-tab" role="tablist">
       <a class="list-group-item list-group-item-action active px-3 border-0" id="list-intro-list" data-mdb-toggle="list"
-        href="#list-intro" role="tab" aria-controls="list-intro">Introduzione</a>
+        href="#maven-list-intro" role="tab" d="maven-list"maven-list-intro">Introduzione</a>
       <a class="list-group-item list-group-item-action px-3 border-0" id="list-p1-list" data-mdb-toggle="list"
-        href="#list-p1" role="tab" aria-controls="list-p1">Perchè usare Maven</a>
+        href="#maven-list-p1" role="tab" d="maven-list"maven-list-p1">Perchè usare Maven</a>
       <a class="list-group-item list-group-item-action px-3 border-0" id="list-p2-list" data-mdb-toggle="list"
-        href="#list-p2" role="tab" aria-controls="list-p2">Project Object Model</a>
+        href="#maven-list-p2" role="tab" d="maven-list"maven-list-p2">Project Object Model</a>
       <a class="list-group-item list-group-item-action px-3 border-0" id="list-p3-list" data-mdb-toggle="list"
-        href="#list-p3" role="tab" aria-controls="list-p3">Dipendenze</a>
+        href="#maven-list-p3" role="tab" d="maven-list"maven-list-p3">Dipendenze</a>
       <a class="list-group-item list-group-item-action px-3 border-0" id="list-p4-list" data-mdb-toggle="list"
-        href="#list-p4" role="tab" aria-controls="list-p4">Repository</a>
+        href="#maven-list-p4" role="tab" d="maven-list"maven-list-p4">Repository</a>
       <a class="list-group-item list-group-item-action px-3 border-0" id="list-p5-list" data-mdb-toggle="list"
-        href="#list-p5" role="tab" aria-controls="list-p5">Proprietà Build e Profili</a>
+        href="#maven-list-p5" role="tab" d="maven-list"maven-list-p5">Proprietà Build e Profili</a>
       <a class="list-group-item list-group-item-action px-3 border-0" id="list-p6-list" data-mdb-toggle="list"
-        href="#list-p6" role="tab" aria-controls="list-p6">Maven build e ciclo di vita</a>
+        href="#maven-list-p6" role="tab" d="maven-list"maven-list-p6">Maven build e ciclo di vita</a>
       <a class="list-group-item list-group-item-action px-3 border-0" id="list-p7-list" data-mdb-toggle="list"
-        href="#list-p7" role="tab" aria-controls="list-p7">Multi-Module Project e BOM</a>
+        href="#maven-list-p7" role="tab" d="maven-list"maven-list-p7">Multi-Module Project e BOM</a>
       <a class="list-group-item list-group-item-action px-3 border-0" id="list-p8-list" data-mdb-toggle="list"
-        href="#list-p8" role="tab" aria-controls="list-p8">Vari Test Fatti</a>
+        href="#maven-list-p8" role="tab" d="maven-list"maven-list-p8">Vari Test Fatti</a>
     </div>
   </div>
   <div class="col-8">
     <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="list-intro" role="tabpanel" aria-labelledby="list-home-list">
+      <div class="tab-pane fade show active" id="maven-list-intro" role="tabpanel" aria-labelledby="list-home-list">
         <p>
         Nei progetti software tipicamente ci si imbatte in task come il download
         di dipendenze, inserimento di jar addizionali nei classpath,
@@ -41,7 +41,7 @@
         Maven utilizza il POM Project Object Model - scritto in linguaggio XML.
       </p>
       </div>
-      <div class="tab-pane fade" id="list-p1" role="tabpanel" aria-labelledby="list-p1-list">
+      <div class="tab-pane fade" id="maven-list-p1" role="tabpanel" aria-labelledby="list-p1-list">
         <p class="note note-success ">
           <strong>
             Le funzioni chiave di maven sono:
@@ -65,7 +65,7 @@
             dal fle system locale o da repository pubblici come Maven Central.</li>
         </ul>
       </div>
-      <div class="tab-pane fade" id="list-p2" role="tabpanel" aria-labelledby="list-p2-list">
+      <div class="tab-pane fade" id="maven-list-p2" role="tabpanel" aria-labelledby="list-p2-list">
         La configurazione di un progetto Maven avviene con il POM, rappresentato dal file "pom.xml".
         Il POM descrive il progetto, gestisce le dipendenze e le configurazioni per la build del software. Il POM
         inoltre definisce la relazione tra i moduli di un progetto multi-modulo.
@@ -75,7 +75,7 @@
         Questi tre componenti vengono anche chiamati coordinate, sono un identificatore per distinguere univocamente una
         libreria.
       </div>
-      <div class="tab-pane fade" id="list-p3" role="tabpanel" aria-labelledby="list-p3-list">
+      <div class="tab-pane fade" id="maven-list-p3" role="tabpanel" aria-labelledby="list-p3-list">
         Le librerie esterne di un progetto vengono chiamate dipendenze.
         La funzionalità di gestione delle dipendenze di Maven garantisce il download automatico di tali librerie da un
         repository centrale,
@@ -86,7 +86,7 @@
         download delle repository, velocizza il checking out di un progetto e fornisce una piattaforma efficace per lo
         scambio di artefatti all'interno dell'organizzazione.
       </div>
-      <div class="tab-pane fade" id="list-p4" role="tabpanel" aria-labelledby="list-p4-list">
+      <div class="tab-pane fade" id="maven-list-p4" role="tabpanel" aria-labelledby="list-p4-list">
         Un repository di Maven viene utilizzato per contenere artefatti di build e dipendenze di vario tipo.
         Il repository locale predefinito si trova nella cartella ".m2/repository" nella directory home dell'utente.
         <br/>
@@ -94,7 +94,7 @@
         Se nel repository locale è disponibile un artefatto o un plugin, Maven lo utilizza. In caso contrario viene scaricato da un repository centrale.
         Non tutte le librerie sono presenti nel repository centrale, per tali librerie sarà necessario fornire l'URL al repository alternativo all'interno del file "pom.xml".
       </div>
-      <div class="tab-pane fade" id="list-p5" role="tabpanel" aria-labelledby="list-p5-list">
+      <div class="tab-pane fade" id="maven-list-p5" role="tabpanel" aria-labelledby="list-p5-list">
         <p class="note note-light">
           <strong>Proprietà:</strong> Le proprietà aiutano il file "pom.xml" sulla leggibilità e mantenibilità. 
           Un uso classico dove utilizzare le proprietà custom è per definire le versioni per le dipendenze del progetto.
@@ -107,7 +107,7 @@
           <strong>Profili:</strong> Un profilo banalmente è un set di configurazioni. Usando i profili si può customizzare le varie build per i differenti environment come Produzione, Test e Development.
         </p>
       </div>
-      <div class="tab-pane fade" id="list-p6" role="tabpanel" aria-labelledby="list-p6-list">
+      <div class="tab-pane fade" id="maven-list-p6" role="tabpanel" aria-labelledby="list-p6-list">
         <p>Ogni build di Maven segue un ciclo di vita specifico. Possiamo eseguire diversi obiettivi del ciclo di vita della build, inclusi quelli per compilare il codice del progetto, creare un pacchetto e installare l'artefatto prodotto.</p>
         <p>Le fasi del ciclo di vita: </p>
         <ul class="list-group list-group-light">
@@ -121,7 +121,7 @@
           <li class="list-group-item"><strong>deploy</strong>, deploy del pacchetto in un server remoto o nella repository.</li>
         </ul>
       </div>
-      <div class="tab-pane fade" id="list-p7" role="tabpanel" aria-labelledby="list-p7-list">
+      <div class="tab-pane fade" id="maven-list-p7" role="tabpanel" aria-labelledby="list-p7-list">
         <p>Un progetto multi modulo è costituito con l'aggregazione di POM che gestiscono un gruppo di sottomoduli. 
           In molti casi l'aggregatore è localizzato nella project's root directory. 
           I sottomoduli sono dei regolari progetti Maven, e possono essere buildati separatamente attraverso l'aggregatore POM. 
@@ -139,7 +139,7 @@
           <strong>BOM:</strong> Bill of Materials, un tipo speciale di POM usato per controllare le versioni delle dipendenze del progetto, provvede a centralizzare in un unico posto le versioni. Il BOM offre la flessibilità di aggiungere una dipendenza al nostro modulo senza preoccuparsi della versione da cui dovranno dipendere.
         </p>
       </div>
-      <div class="tab-pane fade" id="list-p8" role="tabpanel" aria-labelledby="list-p8-list">
+      <div class="tab-pane fade" id="maven-list-p8" role="tabpanel" aria-labelledby="list-p8-list">
         <p>Qui trovi i vari test effettuati.</p>
         <p class="note note-info">
           <strong><a href="https://github.com/Elpiu/cose-da-studiare/tree/main/esercitazioni/maven/Generate%20simple%20Project%20Maven">Generate simple Project Maven</a></strong>
