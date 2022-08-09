@@ -8,14 +8,17 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <script src="./assets/js/dynamicMenuItems.js"></script>
+
   <title>Document</title>
 </head>
 
 <body>
-  <div id="otherComponent"></div>
+
+    <div id="otherComponent"></div>
 
   <header id="header"></header>
   <div id="mainScreen" content="intro" name="Intro" class="p-3"></div>
+
 
   <div id="onlyContents" class="m-3">
     <div id="c1" content="Maven" name="Maven" class="p-3"></div>
@@ -61,11 +64,10 @@
 
       //$("#c4").load("./components/contents/todo.html");
       //$("#c5").load("./components/contents/todo.html");
-      
-      $("#c6").load("./components/contents/tddJunit.html");
-      
+
+      $("#c6").load("./components/contents/tddJunit.html"); 
       $("#c7").load("./components/contents/applicationServer.html");
-      //$("#c8").load("./components/contents/todo.html");
+      $("#c1").load("./components/contents/agile-scrum.html");
       $("#c9").load("./components/contents/ci.html");
 
       setTimeout(() => load_and_set("content", "name"), 500);
