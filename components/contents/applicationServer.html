@@ -1,0 +1,176 @@
+<h1>Application Server</h1>
+<div class="row">
+    <div class="col-4">
+        <div class="list-group list-group-light" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active px-3 border-0" id="list-intro-list"
+                data-mdb-toggle="list" href="#appServer-list-intro" role="tab"
+                aria-controls="list-intro">Introduzione</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-p1-list" data-mdb-toggle="list"
+                href="#appServer-list-p1" role="tab" aria-controls="list-p1">Vantaggi</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-p4-list" data-mdb-toggle="list"
+                href="#appServer-list-p2" role="tab" aria-controls="list-p2">WildFly</a>
+
+            <!--
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-p6-list" data-mdb-toggle="list"
+                href="#appServer-list-p6" role="tab" aria-controls="list-p">end</a>
+                -->
+        </div>
+    </div>
+    <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="appServer-list-intro" role="tabpanel"
+                aria-labelledby="list-home-list">
+                <p>
+                    In informatica un <strong>application server</strong> è una tipologia di server che fornisce
+                    l'infrastruttura
+                    e le funzionalità logiche di supporto, sviluppo ed esecuzione di applicazioni nonché altri
+                    componenti
+                    server in un contesto distribuito.
+                    Si tratta di un complesso di servizi orientati alla realizzazione di applicazioni ad
+                    architettura multilivello ed enterprise, con alto grado di complessità, spesso orientate per il web
+                    (applicazioni web). In altre parole su di esso gira la cosiddetta logica di business in
+                    un'architettura hardware/software di tipo multi-tier e può dunque essere definito un middleware.
+                    La sua gestione è opera dei cosiddetti sistemisti applicativi dove oltre alle operazioni di
+                    installazione e configurazione un'operazione tipica è quella di deployment dell'applicazione web.
+                </p>
+            </div>
+            <div class="tab-pane fade" id="appServer-list-p1" role="tabpanel" aria-labelledby="list-p1-list">
+
+                <p class="note note-info">
+                    <strong>I vantaggi dell'utilizzo di un application server</strong>
+                </p>
+                <p>L'adozione di application server offre particoalri benefici soprattuto nei settori dello sviluppo,
+                    dell'esecuzione e
+                    della gestione integrata dei sistemi. I principali vantaggi possono essere riassunti:
+                </p>
+                <ul class="list-group list-group-light">
+                    <li class="list-group-item"><strong>Semplificazione delle attività di sviluppo</strong>:
+                        gli application server creano un ambiente nel quale si possono utilizzare gli strumenti di
+                        sviluppo più diffusi
+                        sul mercato, consentendo di produrre e distribuire rapidamente applicazioni transazionali
+                        altamente scalabili. In generale,
+                        questi ambienti comprendono modelli e strumenti di ausilio per sviluppare le applicazioni,
+                        riducendo i tempi di realizzazione
+                        e messa in esercizio dei programmi negli ambienti distribuiti.
+                    </li>
+                    <li class="list-group-item"><strong>Supporto di vari linguaggi, strumenti e piattaforme
+                            software</strong>: a seconda
+                        dell'application server utilizzato, le applicazioni possono essere scritte nel linguaggio
+                        preferito dal programmatore.
+                    </li>
+                    <li class="list-group-item"><strong>Riusabilità del codice</strong>:
+                        la riusabilità del codice deriva sia dalla programmazione orientata agli oggetti spesso
+                        utilizzata
+                        in questi casi e dall'utilizzo dell'approccio a componenti. Una volta sviluppata una logica
+                        applicativa essa può essere condivisa e riutilizzata.</li>
+                    <li class="list-group-item"><strong>Gestione delle transazioni</strong>, l'application server
+                        facilita la gestione delle operazioni
+                        basate su transazioni, assicurando l'integrità transazionale e gestionale affidabile dei
+                        back-end multipli per le risorse e i dati.
+                        Il sistema di gestione delle transazioni gestisce le interazioni con i database e le funzioni di
+                        commit, rollback e recovery.</li>
+                    <li class="list-group-item"><strong>Alte prestazioni</strong>, gli application server offrono
+                        caratteristiche architetturali che
+                        permettono di erogare elevate prestazioni quali il multithreading, il bilanciamento dinamico dei
+                        carichi di lavoro (load balancing),
+                        il caching e il pooling degli oggetti e delle connessioni ai database.</li>
+                    <li class="list-group-item"><strong>Scalabilità</strong>, gli application server supportano il
+                        partizionamento delle applicazioni e la
+                        distribuzione in rete dei componenti. I sistemi multiprocessore e i cluster di application
+                        server assicurano la scalabilità necessaria
+                        a gestire anche un gran numero di utenti concorrenti.</li>
+                    <li class="list-group-item"><strong>Estendibilità</strong>, l'architettura modulare degli
+                        application server e il supporto per i
+                        server e per i moduli che possono essere caricati dinamicamente, consente alle aziende di
+                        estendere facilmente le funzionalità dei loro
+                        sistemi e delle relative applicazioni.</li>
+                    <li class="list-group-item"><strong>Robustezza</strong>, l'architettura basata su componenti degli
+                        application server e il bilanciamento dinamico dei
+                        carichi assicurano l'alta disponibilità dei sistemi. I componenti del server e la logica
+                        applicativa possono essere riconfigurati, aggiunti o rimossi
+                        senza interruzioni nell'erogazione dei servizi agli utenti. Queste caratteristiche sono
+                        particolarmente importanti per garantire l'alta disponibilità del sistema,
+                        requisito necessario per il buon esito delle operazioni mission-critical aziendali.</li>
+                    <li class="list-group-item"><strong>Sicurezza</strong>, gli application server offrono funzioni
+                        specifiche di sicurezza end-to-end,
+                        necessarie per l'esecuzione delle applicazioni aziendali che richiedono particolari misure di
+                        sicurezza e riservatezza dei dati. Per le comunicazioni tra client e server,
+                        vengono impiegati algoritmi standard e ampiamente testati e collaudati sul web, come quelli
+                        offerti dal protocollo SSL. Il logging e il tracking degli
+                        eventi forniscono protezione dagli accessi non autorizzati.</li>
+                </ul>
+            </div>
+
+            <div class="tab-pane fade" id="appServer-list-p2" role="tabpanel" aria-labelledby="list-p2-list">
+
+                <p class="note note-info">WildFly (precedentemente noto come JBoss AS) è un application server open
+                    source multipiattaforma. Interamente realizzato in Java, implementa le specifiche Java EE.
+                    È stato acquistato da Red Hat e gestito come un progetto open source. </p>
+
+                <ul class="list-group list-group-light">
+                    <p class="note note-secondary">Le principali caratteristiche:
+                    </p>
+
+                    <li class="list-group-item">
+                        <strong>Powerful</strong>, la configurazione in WildFly è centralizzata, semplice e incentrato
+                        sull'utente.
+                        Il file di configurazione è organizzato per sottosistemi facilmente comprensibili e nessun
+                        cablaggio
+                        interno del server è esposto. Tutte le funzionalità di gestione sono esposte in modo unificato
+                        attraverso molte forme di accesso. Questi includono una CLI, una console di amministrazione
+                        basata sul Web,
+                        un'API Java nativa.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Modular</strong>, WildFly utilizza i moduli JBoss per fornire un vero isolamento
+                        dell'applicazione,
+                        nascondendo le classi di implementazione del server dall'applicazione e caricando solo i JAR
+                        necessari.
+                        Le regole di visibilità hanno impostazioni predefinite ragionevoli, ma possono anche essere
+                        personalizzate.
+                        L'algoritmo di risoluzione delle dipendenze agevola le prestazioni per il caricamento delle
+                        classi e non è
+                        influenzato dal numero di versioni delle librerie installate.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Lightweight</strong>, WildFly adotta un approccio aggressivo alla gestione della
+                        memoria.
+                        I servizi runtime di base sono stati sviluppati per ridurre al minimo l'allocazione dell'heap
+                        utilizzando
+                        metadati indicizzati nella cache comuni. La console di amministrazione è al 100% stateless e
+                        guidata esclusivamente dal client.
+                        Si avvia immediatamente e non richiede memoria sul server. Queste ottimizzazioni combinate
+                        consentono a
+                        WildFly di funzionare con le impostazioni JVM di serie e su dispositivi di piccole dimensioni;
+                        lasciando più
+                        spazio per i dati delle applicazioni e supportando una maggiore scalabilità.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Standards Based</strong>, WildFly implementa gli ultimi standard Java aziendali di
+                        Jakarta EE e
+                        Eclipse MicroProfile. Questi migliorano la produttività degli sviluppatori fornendo funzionalità
+                        aziendali avanzate in
+                        framework facili da utilizzare e riducono il carico tecnico.
+                        Ciò consente al team di concentrarsi sulle esigenze aziendali principali dell'applicazione.
+                        Sviluppando un'applicazione su standard si mantiene la flessibilità di migrare tra le varie
+                        soluzioni dei fornitori.
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- 
+            <div class="tab-pane fade" id="appServer-list-p6" role="tabpanel" aria-labelledby="list-p6-list">
+                <p>Qui trovi i vari test effettuati.</p>
+                <p class="note note-info">
+                    <strong><a href="#">###</a></strong>
+                </p>
+            </div>
+            -->
+
+
+        </div>
+
+
+    </div>

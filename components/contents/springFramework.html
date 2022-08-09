@@ -2,236 +2,359 @@
 <div class="row">
   <div class="col-4">
     <div class="list-group list-group-light" id="list-tab" role="tablist">
-      <a class="list-group-item list-group-item-action active px-3 border-0" id="list-intro-list" data-mdb-toggle="list"
-        href="#spring-list-intro" role="tab" aria-controls="list-intro">Introduzione</a>
-      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p1-list" data-mdb-toggle="list"
-        href="#spring-list-p1" role="tab" aria-controls="list-p1">IoC e DI</a>
-      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p2-list" data-mdb-toggle="list"
-        href="#spring-list-p2" role="tab" aria-controls="list-p2">Bean EJB</a>
-      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p3-list" data-mdb-toggle="list"
-        href="#spring-list-p3" role="tab" aria-controls="list-p3">Scope Bean in Spring</a>
-      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p4-list" data-mdb-toggle="list"
-        href="#spring-list-p4" role="tab" aria-controls="list-p4">Vari Test Fatti</a>
+      <a
+        class="list-group-item list-group-item-action active px-3 border-0"
+        id="list-intro-list"
+        data-mdb-toggle="list"
+        href="#spring-list-intro"
+        role="tab"
+        aria-controls="list-intro"
+        >Introduzione</a
+      >
+      <a
+        class="list-group-item list-group-item-action px-3 border-0"
+        id="list-p1-list"
+        data-mdb-toggle="list"
+        href="#spring-list-p1"
+        role="tab"
+        aria-controls="list-p1"
+        >IoC e DI</a
+      >
+      <a
+        class="list-group-item list-group-item-action px-3 border-0"
+        id="list-p2-list"
+        data-mdb-toggle="list"
+        href="#spring-list-p2"
+        role="tab"
+        aria-controls="list-p2"
+        >Bean EJB</a
+      >
+      <a
+        class="list-group-item list-group-item-action px-3 border-0"
+        id="list-p3-list"
+        data-mdb-toggle="list"
+        href="#spring-list-p3"
+        role="tab"
+        aria-controls="list-p3"
+        >Scope Bean in Spring</a
+      >
+      <a
+        class="list-group-item list-group-item-action px-3 border-0"
+        id="list-p4-list"
+        data-mdb-toggle="list"
+        href="#spring-list-p4"
+        role="tab"
+        aria-controls="list-p4"
+        >Vari Test Fatti</a
+      >
     </div>
   </div>
   <div class="col-8">
     <div class="tab-content" id="nav-tabContent">
-      <div class="tab-pane fade show active" id="spring-list-intro" role="tabpanel" aria-labelledby="list-home-list">
+      <div
+        class="tab-pane fade show active"
+        id="spring-list-intro"
+        role="tabpanel"
+        aria-labelledby="list-home-list"
+      >
         <p>
-          <strong>La nascita di Spring</strong>, spring nasce da JavaEE stato dell'arte di quel tempo, basato sui Java Enterprise Bean.
-          L'idea di Spring era di realizzare un framework più leggero, che utilizzava classi POJO (classi con field privati e metodi getters/setters) e Dependency Injection.
+          <strong>La nascita di Spring</strong>, spring nasce da JavaEE stato
+          dell'arte di quel tempo, basato sui Java Enterprise Bean. L'idea di
+          Spring era di realizzare un framework più leggero, che utilizzava
+          classi POJO (classi con field privati e metodi getters/setters) e
+          Dependency Injection.
         </p>
         <p>
-          Ad oggi Spring è un application Framework e IoC container per la piattaforma Java.
-          Il Framework Spring è open source.
-          Una delle caratteristiche di Spring è la modulatirtà, massimizzando il riuso dei componenti, si usano molto le interfacce per non vincolare le implementazioni.
+          Ad oggi Spring è un application Framework e IoC container per la
+          piattaforma Java. Il Framework Spring è open source. Una delle
+          caratteristiche di Spring è la modulatirtà, massimizzando il riuso dei
+          componenti, si usano molto le interfacce per non vincolare le
+          implementazioni.
         </p>
-        <p>Tra i moduli più importanti troviamo: </p>
+        <p>Tra i moduli più importanti troviamo:</p>
         <ul class="list-group list-group-light list-group-small">
           <li class="list-group-item">
-            <strong>Spring Core Container</strong>, il modulo base di Spring che provvede al container di Spring (BeanFactory e ApplicationContext).
+            <strong>Spring Core Container</strong>, il modulo base di Spring che
+            provvede al container di Spring (BeanFactory e ApplicationContext).
           </li>
           <li class="list-group-item">
-            <strong>Aspect-oriented programming</strong>, consente di implementare le cross-cutting concerns.
+            <strong>Aspect-oriented programming</strong>, consente di
+            implementare le cross-cutting concerns.
           </li>
           <li class="list-group-item">
-            <strong>Authentication and authorization</strong>, sistema di configurazione della sicurezza per un applicazione Spring, supporta i principali standard di sicurezza, protocolli, tool e altre pratiche grazie a Spring Security.
+            <strong>Authentication and authorization</strong>, sistema di
+            configurazione della sicurezza per un applicazione Spring, supporta
+            i principali standard di sicurezza, protocolli, tool e altre
+            pratiche grazie a Spring Security.
           </li>
           <li class="list-group-item">
-            <strong>Convention over configuration</strong>, permette un rapido sviluppo di un applicazione basando il progetto sulle convenzioni.
+            <strong>Convention over configuration</strong>, permette un rapido
+            sviluppo di un applicazione basando il progetto sulle convenzioni.
           </li>
           <li class="list-group-item">
-            <strong>Data access</strong>, supporto per i database relazionali usando la libreria JDBC, ORM (Object relation mapping) e NOSQL database.
+            <strong>Data access</strong>, supporto per i database relazionali
+            usando la libreria JDBC, ORM (Object relation mapping) e NOSQL
+            database.
           </li>
           <li class="list-group-item">
-            <strong>Messaging</strong>, registrazione e confiurazione di oggetti listner di messaggi per consumatri e produttori tranite JMS.
+            <strong>Messaging</strong>, registrazione e confiurazione di oggetti
+            listner di messaggi per consumatri e produttori tranite JMS.
           </li>
           <li class="list-group-item">
-            <strong>Model view controller</strong>, framework basato su HTTP e servlet, fornisce hook per l'estensione e la personalizzazone per applicazioni Web e servizi Web RESTful.
+            <strong>Model view controller</strong>, framework basato su HTTP e
+            servlet, fornisce hook per l'estensione e la personalizzazone per
+            applicazioni Web e servizi Web RESTful.
           </li>
           <li class="list-group-item">
-            <strong>Remote access framework</strong>, marshalling configurativo in stile (RPC) di ogetti Java su rete che supportano Java Remote Method Invocation (RMI)
-            , CORBA (Common Object Request Brocker Architecture) e protocolli basati su HTTP, inclusi i servizi Web (SOAP (Simple Object Access Protocol)).
+            <strong>Remote access framework</strong>, marshalling configurativo
+            in stile (RPC) di ogetti Java su rete che supportano Java Remote
+            Method Invocation (RMI) , CORBA (Common Object Request Brocker
+            Architecture) e protocolli basati su HTTP, inclusi i servizi Web
+            (SOAP (Simple Object Access Protocol)).
           </li>
           <li class="list-group-item">
-            <strong>Transaction management</strong>, gestione delle transazioni: unifica diverse API di gestione delle transazioni e coordina le transazioni per gli oggetti Java.
+            <strong>Transaction management</strong>, gestione delle transazioni:
+            unifica diverse API di gestione delle transazioni e coordina le
+            transazioni per gli oggetti Java.
           </li>
           <li class="list-group-item">
-            <strong>Remote managment</strong>, esposizione di configurazioni e gestione di oggetti Java per la configurazione locale o remota tramite Java Managment Extensions (JMX).
+            <strong>Remote managment</strong>, esposizione di configurazioni e
+            gestione di oggetti Java per la configurazione locale o remota
+            tramite Java Managment Extensions (JMX).
           </li>
           <li class="list-group-item">
-            <strong>Testing</strong>, supporto di classi per la scrittura di unit test e integration test.
+            <strong>Testing</strong>, supporto di classi per la scrittura di
+            unit test e integration test.
           </li>
         </ul>
-
       </div>
-      <div class="tab-pane fade" id="spring-list-p1" role="tabpanel" aria-labelledby="list-p1-list">
-
-        <p class="note note-success ">
-          <strong>
-            IoC e DI
-          </strong>
+      <div
+        class="tab-pane fade"
+        id="spring-list-p1"
+        role="tabpanel"
+        aria-labelledby="list-p1-list"
+      >
+        <p class="note note-success">
+          <strong> IoC e DI </strong>
         </p>
 
         <ul class="list-group list-group-light">
           <li class="list-group-item">
             <p>
-                          In programmazione, soprattutto quella ad oggetti, l'inversione del controllo o 
-            Inversion of Control (IoC) è un pattern per cui un componente di livello 
-            applicativo riceve il controllo da un componente appartenente a una libreria riusabile.
-             Questo schema ribalta quello tradizionale della programmazione procedurale, dove il codice 
-             applicativo svolge i propi compiti richiamando e quindi passando il controllo a procedura
-              di libreria. L'obiettivo dell'inversione del controllo è lo stesso dell'abstract factory, rendere le
-               componenti software il più indipendenti possibile, affinchè sia possibile modificare una parte senza dover modificarne altre.
-             
-            </p>
-   
-            <p>
-            In breve nell' IoC una classe che ha 
-            bisogno di una dipendenza di un'altra classe non si occuperà 
-            di istanziarla poichè tale lavoro se ne occuperà il framework 
-            (ad esempio Spring con la Dependency Injection). 
+              In programmazione, soprattutto quella ad oggetti, l'inversione del
+              controllo o Inversion of Control (IoC) è un pattern per cui un
+              componente di livello applicativo riceve il controllo da un
+              componente appartenente a una libreria riusabile. Questo schema
+              ribalta quello tradizionale della programmazione procedurale, dove
+              il codice applicativo svolge i propi compiti richiamando e quindi
+              passando il controllo a procedura di libreria. L'obiettivo
+              dell'inversione del controllo è lo stesso dell'abstract factory,
+              rendere le componenti software il più indipendenti possibile,
+              affinchè sia possibile modificare una parte senza dover
+              modificarne altre.
             </p>
 
+            <p>
+              In breve nell' IoC una classe che ha bisogno di una dipendenza di
+              un'altra classe non si occuperà di istanziarla poichè tale lavoro
+              se ne occuperà il framework (ad esempio Spring con la Dependency
+              Injection).
+            </p>
           </li>
           <li class="list-group-item">
             <p>
-            La Dependency Injection è una possibile implementazione dell'Inversion 
-            of Control, lo scopo è qeullo di semplificare lo sviluppo e migliorare 
-            la testabilità di software di grandi dimensioni. Per utilizzare tale design pattern è sufficiente dichiarare le dipendenze di cui un componente necessita (dette anche interface contract). Quando il componente verrà istanziato, un iniettore si prenderà carico di risolvere le dipendenze (attuando dunque l'inversione del controllo). 
-            Il framework dunque è lui che crea l'istanza che serve e la inserisce nella 
-            classe cha ha bisogno di quella istanza.
+              La Dependency Injection è una possibile implementazione
+              dell'Inversion of Control, lo scopo è qeullo di semplificare lo
+              sviluppo e migliorare la testabilità di software di grandi
+              dimensioni. Per utilizzare tale design pattern è sufficiente
+              dichiarare le dipendenze di cui un componente necessita (dette
+              anche interface contract). Quando il componente verrà istanziato,
+              un iniettore si prenderà carico di risolvere le dipendenze
+              (attuando dunque l'inversione del controllo). Il framework dunque
+              è lui che crea l'istanza che serve e la inserisce nella classe cha
+              ha bisogno di quella istanza.
             </p>
             <p>
-            In Spring è l'annotazione <strong>@Autowrite</strong> che ci permette 
-            di specificare le dipendenze di cui una classe ha bisogno delegando 
-            tutto il compito di creare l'oggetto e iniettarlo direttamente dal 
-            framework spring. 
+              In Spring è l'annotazione <strong>@Autowrite</strong> che ci
+              permette di specificare le dipendenze di cui una classe ha bisogno
+              delegando tutto il compito di creare l'oggetto e iniettarlo
+              direttamente dal framework spring.
             </p>
-
           </li>
         </ul>
       </div>
 
-      <div class="tab-pane fade" id="spring-list-p2" role="tabpanel" aria-labelledby="list-p2-list">
+      <div
+        class="tab-pane fade"
+        id="spring-list-p2"
+        role="tabpanel"
+        aria-labelledby="list-p2-list"
+      >
         <p>Bean EJB.</p>
         <p class="note note-info">
           Gli Enterprise JavaBeans sono i componenti software che implementanto,
-          lato server, la logica di bussiness di un'applicazione web all'interno dell'architettura-piattaforma Java EE,
-           espletando servizi a favore della parte front-end (ovvero la logica di presentazione) di un'applicazione web.
-            Rappresentano dunque uno strato software residiente su un application server all'interno di un'architettura software di tipo multi-tier.
+          lato server, la logica di bussiness di un'applicazione web all'interno
+          dell'architettura-piattaforma Java EE, espletando servizi a favore
+          della parte front-end (ovvero la logica di presentazione) di
+          un'applicazione web. Rappresentano dunque uno strato software
+          residiente su un application server all'interno di un'architettura
+          software di tipo multi-tier.
         </p>
         <p class="note note-info">
-        Le specifiche per gli EJB definiscono diverse proprietà che questi devono rispettare, tra cui la persistenza, il supporto alle transazioni, la gestione della concorrenza, della sicurezza e l'integrazione con altre tecnologie, come JMS, JNDI e CORBA.
-         Con lo standard EJB 3.2 viene introdotta la possibilità di effettuare dependency injection e usare le annotazioni per le configurazioni che precedentemente avvenivano mediante XML. Gli EJB necessitano di un EJB container implementato all'interno degli application server che ne gestisce il loro ciclo di vita.
-
+          Le specifiche per gli EJB definiscono diverse proprietà che questi
+          devono rispettare, tra cui la persistenza, il supporto alle
+          transazioni, la gestione della concorrenza, della sicurezza e
+          l'integrazione con altre tecnologie, come JMS, JNDI e CORBA. Con lo
+          standard EJB 3.2 viene introdotta la possibilità di effettuare
+          dependency injection e usare le annotazioni per le configurazioni che
+          precedentemente avvenivano mediante XML. Gli EJB necessitano di un EJB
+          container implementato all'interno degli application server che ne
+          gestisce il loro ciclo di vita.
         </p>
 
         <p>
           <strong>Motivazioni</strong> Le specifiche Enterprise JavaBeans
-          intendono fornire metodologia standard per implementare la logica di funzionamaneto delle
-          applicazioni di tipo enterprise, applicazioni cioè che forniscono servizi via Internet 
-          su larga scale. Per realizzare applicazioni di questo tipo è necessario affrontare 
-          una serie di problematiche tecniche che possono rivelarsi 
-          molto complesse e laboriose da risolvere. Gli Enterprise Java Bean intendono fornire una 
-          soluzione a questi problemi in modo da semplificare lo sviluppo di questo tipo di applicazioni. 
-
+          intendono fornire metodologia standard per implementare la logica di
+          funzionamaneto delle applicazioni di tipo enterprise, applicazioni
+          cioè che forniscono servizi via Internet su larga scale. Per
+          realizzare applicazioni di questo tipo è necessario affrontare una
+          serie di problematiche tecniche che possono rivelarsi molto complesse
+          e laboriose da risolvere. Gli Enterprise Java Bean intendono fornire
+          una soluzione a questi problemi in modo da semplificare lo sviluppo di
+          questo tipo di applicazioni.
         </p>
-        <p active>
-          <div class="note note-info">
+        <p active></p>
+        <div class="note note-info">
           <p>
-          Le specifiche EJB descrivono in dettaglio come realizzare un application server 
-          che fornisce le seguenti funzionalità:
-        </p>
-        <ul class="list-group list-group-light">
-          <li class="list-group-item border-0">Persistenza</li>
-          <li class="list-group-item border-0">Elaborazione delle transazioni</li>
-          <li class="list-group-item border-0">Controllo della concorrenza</li>
-          <li class="list-group-item border-0">Programmazione ad eventi tramite il Java Message Service</li>
-          <li class="list-group-item border-0">Servizio di directory per elencare e nominare gli EJB (JNDI)</li>
-          <li class="list-group-item border-0">Installazione di componenti software di un application server</li>
-          <li class="list-group-item border-0">Invocazione di procedure remote tramite l'utilizzo di RMI-IIOP o CORBA</li>
-          <li class="list-group-item border-0">Fornire servizi web</li>
-        </ul>
-      </div>
-      <div class="note note-info">
-        <p>
-          Tipologie di EJB:
-        </p>
-        <ul class="list-group list-group-light">
-          <li class="list-group-item border-0">
-            <p>
-            EJB di sessione detti anche Session EJB, gestiscono l'elaborazione 
-            delle informazioni sul server. Generalmente sono una interfaccia tra client 
-            e servizi offerti dai componenti disponibili sul server. Ne esistono di due tipi 
-            con stato e senza stato.
+            Le specifiche EJB descrivono in dettaglio come realizzare un
+            application server che fornisce le seguenti funzionalità:
           </p>
-          <p>
-            Con stato anche detti stateful, sono oggetti distribuiti che possiedono 
-            uno stato. Lo stato non è ersistente, però l'accesso al bean è limitato ad un unico client.
-          </p>
-          <p>
-            Senza stato detti anche stateless, sono oggetti distribuiti senza uno 
-            stato associato, questa caratteristica permette un accesso 
-            concorrente alla funzionalità offerte dal bean. Non è garantito che 
-            il contenuto delle variabili di istanza si conservi tra diverse chiamate ai metodi del bean.
-          </p>
-          </li>
-        </ul>
-        <p>EJB guidati da messaggi, detti anche Message driven EJBs, erano gli unici bean con funzionamento asincrono. Tramite il Java Message Service JMS, si iscrivono a un argomento (Topic) o una coda (Queue) e si attivano alla ricezione di un messaggio inviato all’argomento o alla coda a cui sono iscritti. Non richiedono una istanziazione da parte dei client.</p>
-      </div>
-      </div>
-
-      <div class="tab-pane fade" id="spring-list-p3" role="tabpanel" aria-labelledby="list-p3-list">
-
-        <p class="note note-success ">
-          <strong>
-            Tipi di scope in Spring
-          </strong>
-           L'ambito di un bean definisce il cilo di vita e la visibilità di quel bean nei 
-           contesti in cui lo utilizziamo. L'ultima versione di Spring definisce sei tipi di ambiti: 
-        </p>
-        <ul class="list-group list-group-light">
-          <li class="list-group-item"><strong>Singleton</strong>,
-             il container crea una singola istanza di quel bean; tutte 
-             le richieste a quel bean ritornano lo stesso oggetto, 
-             memorizzato nella cache. Qualsiasi modifica all'oggetto 
-             sarà riflessa a tutti i riferimenti di quel bean. Questp 
-             scope è quello di default in Spring se non viene specificato altro.
-            <br>
-            <strong>@Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)</strong>
+          <ul class="list-group list-group-light">
+            <li class="list-group-item border-0">Persistenza</li>
+            <li class="list-group-item border-0">
+              Elaborazione delle transazioni
             </li>
-          <li class="list-group-item"><strong>Prototype</strong>, 
-            un bean con questo scope restituirà un'istanza diversa ogni volta che viene richiesta dal container.
-            <br>
-            <strong>@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)</strong>
+            <li class="list-group-item border-0">
+              Controllo della concorrenza
+            </li>
+            <li class="list-group-item border-0">
+              Programmazione ad eventi tramite il Java Message Service
+            </li>
+            <li class="list-group-item border-0">
+              Servizio di directory per elencare e nominare gli EJB (JNDI)
+            </li>
+            <li class="list-group-item border-0">
+              Installazione di componenti software di un application server
+            </li>
+            <li class="list-group-item border-0">
+              Invocazione di procedure remote tramite l'utilizzo di RMI-IIOP o
+              CORBA
+            </li>
+            <li class="list-group-item border-0">Fornire servizi web</li>
+          </ul>
+        </div>
+        <div class="note note-info">
+          <p>Tipologie di EJB:</p>
+          <ul class="list-group list-group-light">
+            <li class="list-group-item border-0">
+              <p>
+                EJB di sessione detti anche Session EJB, gestiscono
+                l'elaborazione delle informazioni sul server. Generalmente sono
+                una interfaccia tra client e servizi offerti dai componenti
+                disponibili sul server. Ne esistono di due tipi con stato e
+                senza stato.
+              </p>
+              <p>
+                Con stato anche detti stateful, sono oggetti distribuiti che
+                possiedono uno stato. Lo stato non è ersistente, però l'accesso
+                al bean è limitato ad un unico client.
+              </p>
+              <p>
+                Senza stato detti anche stateless, sono oggetti distribuiti
+                senza uno stato associato, questa caratteristica permette un
+                accesso concorrente alla funzionalità offerte dal bean. Non è
+                garantito che il contenuto delle variabili di istanza si
+                conservi tra diverse chiamate ai metodi del bean.
+              </p>
+            </li>
+          </ul>
+          <p>
+            EJB guidati da messaggi, detti anche Message driven EJBs, erano gli
+            unici bean con funzionamento asincrono. Tramite il Java Message
+            Service JMS, si iscrivono a un argomento (Topic) o una coda (Queue)
+            e si attivano alla ricezione di un messaggio inviato all’argomento o
+            alla coda a cui sono iscritti. Non richiedono una istanziazione da
+            parte dei client.
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="tab-pane fade"
+        id="spring-list-p3"
+        role="tabpanel"
+        aria-labelledby="list-p3-list"
+      >
+        <p class="note note-success">
+          <strong> Tipi di scope in Spring </strong>
+          L'ambito di un bean definisce il cilo di vita e la visibilità di quel
+          bean nei contesti in cui lo utilizziamo. L'ultima versione di Spring
+          definisce sei tipi di ambiti:
+        </p>
+        <ul class="list-group list-group-light">
+          <li class="list-group-item">
+            <strong>Singleton</strong>, il container crea una singola istanza di
+            quel bean; tutte le richieste a quel bean ritornano lo stesso
+            oggetto, memorizzato nella cache. Qualsiasi modifica all'oggetto
+            sarà riflessa a tutti i riferimenti di quel bean. Questp scope è
+            quello di default in Spring se non viene specificato altro.
+            <br />
+            <strong
+              >@Scope(value = ConfigurableBeanFactory.SCOPE_SINGLETON)</strong
+            >
           </li>
-          <li class="list-group-item"><strong>Request</strong>,
-           questo scope, crea un'istanza di bean per una singola richiesta HTTP.
+          <li class="list-group-item">
+            <strong>Prototype</strong>, un bean con questo scope restituirà
+            un'istanza diversa ogni volta che viene richiesta dal container.
+            <br />
+            <strong
+              >@Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)</strong
+            >
           </li>
-          <li class="list-group-item"><strong>Session</strong>,
-           questo scope, crea un'istanza di bean per una sessione HTTP.
+          <li class="list-group-item">
+            <strong>Request</strong>, questo scope, crea un'istanza di bean per
+            una singola richiesta HTTP.
           </li>
-          <li class="list-group-item"><strong>Application</strong>,
-           questo scope, crea un'istanza di bean per il ciclo di vita di un ServletContext.
+          <li class="list-group-item">
+            <strong>Session</strong>, questo scope, crea un'istanza di bean per
+            una sessione HTTP.
           </li>
-          <li class="list-group-item"><strong>Websocket</strong>,
-           questo scope, crea un'istanza di bean per una particolare sessione WebSocket.
+          <li class="list-group-item">
+            <strong>Application</strong>, questo scope, crea un'istanza di bean
+            per il ciclo di vita di un ServletContext.
+          </li>
+          <li class="list-group-item">
+            <strong>Websocket</strong>, questo scope, crea un'istanza di bean
+            per una particolare sessione WebSocket.
           </li>
         </ul>
-        <p class="note note-info ">Gli ultimi quattro sono request, session, 
-          application and websocket sono disponibili 
-          solo in un’applicazione web-aware.
+        <p class="note note-info">
+          Gli ultimi quattro sono request, session, application and websocket
+          sono disponibili solo in un’applicazione web-aware.
         </p>
       </div>
 
-      <div class="tab-pane fade" id="spring-list-p4" role="tabpanel" aria-labelledby="list-p4-list">
+      <div
+        class="tab-pane fade"
+        id="spring-list-p4"
+        role="tabpanel"
+        aria-labelledby="list-p4-list"
+      >
         <p>Qui trovi i vari test effettuati.</p>
         <p class="note note-info">
           <strong><a href="#">###</a></strong>
         </p>
       </div>
-
+    </div>
   </div>
-</div>
 </div>

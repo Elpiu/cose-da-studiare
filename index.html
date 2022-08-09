@@ -1,90 +1,76 @@
 <!DOCTYPE html>
 <html lang="it">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="./assets/js/dynamicMenuItems.js"></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div id="otherComponent"></div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <header id="header"></header>
-    <div id="mainScreen" content="intro" name="Intro" class="p-3"></div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/js/dynamicMenuItems.js"></script>
+  <title>Document</title>
+</head>
 
-    <div id="onlyContents" class="m-3">
-      <div id="c1" content="Maven" name="Maven" class="p-3"></div>
-      <hr class="hr hr-blurry" />
-      <div
-        id="c2"
-        content="Spring Framework"
-        name="Spring Framework"
-        class="p-3"
-      ></div>
-      <hr class="hr hr-blurry" />
+<body>
+  <div id="otherComponent"></div>
 
-      <div id="c3" content="Rest" name="Paradigma Rest" class="p-3"></div>
-      <hr class="hr hr-blurry" />
+  <header id="header"></header>
+  <div id="mainScreen" content="intro" name="Intro" class="p-3"></div>
 
-      <div
-        id="c4"
-        content="DesignPattern"
-        name="Design Pattern"
-        class="p-3"
-      ></div>
-      <hr class="hr hr-blurry" />
+  <div id="onlyContents" class="m-3">
+    <div id="c1" content="Maven" name="Maven" class="p-3"></div>
+    <hr class="hr hr-blurry" />
+    <div id="c2" content="Spring Framework" name="Spring Framework" class="p-3"></div>
+    <hr class="hr hr-blurry" />
 
-      <div id="c5" content="Database" name="Database" class="p-3"></div>
-      <hr class="hr hr-blurry" />
+    <div id="c3" content="Rest" name="Paradigma Rest" class="p-3"></div>
+    <hr class="hr hr-blurry" />
 
-      <div id="c6" content="TDD" name="TDD e Junit" class="p-3"></div>
-      <hr class="hr hr-blurry" />
+    <div id="c4" content="DesignPattern" name="Design Pattern" class="p-3"></div>
+    <hr class="hr hr-blurry" />
 
-      <div
-        id="c7"
-        content="ApplicationServer"
-        name="Application Server"
-        class="p-3"
-      ></div>
-      <hr class="hr hr-blurry" />
+    <div id="c5" content="Database" name="Database" class="p-3"></div>
+    <hr class="hr hr-blurry" />
 
-      <div id="c8" content="AgileScrum" name="Agile e Scrum" class="p-3"></div>
-      <hr class="hr hr-blurry" />
+    <div id="c6" content="TDD" name="TDD e Junit" class="p-3"></div>
+    <hr class="hr hr-blurry" />
 
-      <div
-        id="c9"
-        content="ContinuosIntegration"
-        name="Continuos Integration"
-        class="p-3"
-      ></div>
-      <hr class="hr hr-blurry" />
-    </div>
+    <div id="c7" content="ApplicationServer" name="Application Server" class="p-3"></div>
+    <hr class="hr hr-blurry" />
 
-    <div id="footer" content="footer" name="About us" class="p-3"></div>
+    <div id="c8" content="AgileScrum" name="Agile e Scrum" class="p-3"></div>
+    <hr class="hr hr-blurry" />
 
-    <script type="text/javascript">
-      $(document).ready(function (e) {
-        $("head").load("./components/head/head.html", () => {});
+    <div id="c9" content="ContinuosIntegration" name="Continuos Integration" class="p-3"></div>
+    <hr class="hr hr-blurry" />
+  </div>
 
-        $("#header").load("./components/header-footer/header.html");
-        $("#footer").load("./components/header-footer/footer.html");
+  <div id="footer" content="footer" name="About us" class="p-3"></div>
 
-        $("#mainScreen").load("./components/Intro/intro.html");
-        $("#c1").load("./components/contents/maven.html");
-        $("#c2").load("./components/contents/springFramework.html");
-        $("#c3").load("./components/contents/httpRest.html");
-        //$("#c4").load("./components/contents/todo.html");
-        //$("#c5").load("./components/contents/todo.html");
-        $("#c6").load("./components/contents/tddJunit.html");
-        //$("#c7").load("./components/contents/todo.html");
-        //$("#c8").load("./components/contents/todo.html");
-        //$("#c9").load("./components/contents/todo.html");
+  <script type="text/javascript">
+    $(document).ready(function (e) {
+      $("head").load("./components/head/head.html", () => { });
 
-        setTimeout(() => load_and_set("content", "name"), 500);
-      });
-    </script>
-  </body>
+      $("#header").load("./components/header-footer/header.html");
+      $("#footer").load("./components/header-footer/footer.html");
+
+      $("#mainScreen").load("./components/Intro/intro.html");
+      $("#c1").load("./components/contents/maven.html");
+      $("#c2").load("./components/contents/springFramework.html");
+      $("#c3").load("./components/contents/httpRest.html");
+
+      //$("#c4").load("./components/contents/todo.html");
+      //$("#c5").load("./components/contents/todo.html");
+      
+      $("#c6").load("./components/contents/tddJunit.html");
+      
+      $("#c7").load("./components/contents/applicationServer.html");
+      //$("#c8").load("./components/contents/todo.html");
+      $("#c9").load("./components/contents/ci.html");
+
+      setTimeout(() => load_and_set("content", "name"), 500);
+    });
+  </script>
+</body>
+
 </html>

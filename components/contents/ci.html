@@ -1,0 +1,108 @@
+<h1>Continuous integration</h1>
+<div class="row">
+  <div class="col-4">
+    <div class="list-group list-group-light" id="list-tab" role="tablist">
+      <a
+        class="list-group-item list-group-item-action active px-3 border-0"
+        id="list-intro-list"
+        data-mdb-toggle="list"
+        href="#ci-list-intro"
+        role="tab"
+        aria-controls="list-intro"
+        >Introduzione</a
+      >
+      <a
+        class="list-group-item list-group-item-action px-3 border-0"
+        id="list-p1-list"
+        data-mdb-toggle="list"
+        href="#ci-list-p1"
+        role="tab"
+        aria-controls="list-p1"
+        >SVN e Git</a
+      >
+
+      <!--
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p6-list" data-mdb-toggle="list"
+        href="#ci-list-p6" role="tab" aria-controls="list-p">Vari Test Fatti</a>
+        -->
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="ci-list-intro"
+        role="tabpanel"
+        aria-labelledby="list-home-list"
+      >
+        <p>
+          Nell'ingegneria del software, l'integrazione continua, spesso
+          abbreviata in <strong>CI</strong> è una pratica che si applica in
+          contesti in cui lo sviluppo del software avviene attraverso un sistema
+          di controllo di versione.
+        </p>
+        <p>
+          Consiste nell'allineamento frequente degli ambienti di lavoro degli
+          sviluppatori verso l'ambiente condiviso. Il concetto è stato
+          originariamente proposto nel contesto dell'extreme programming
+          <strong>XP</strong>, come contromisura preventiva per il problema
+          dell'integrazione hell (la difficoltà dell'integrazione di porzioni di
+          software sviluppati in modo indipendente su lunghi periodi di tempo
+          che di conseguenza potrebbero essere significamente divergenti).
+        </p>
+        <p>
+          Il <strong>CI</strong> è stato originariamente concepito per essere
+          complementare rispetto ad altre pratiche, in particolare legate al
+          <strong>TDD</strong>, si suppone generalmente che siano stati
+          predisposti test automatici che gli sviluppatori possono eseguire
+          immediatamente prima di rilasciare i loro contributi verso l'ambiente
+          condiviso, in modo da garantire che le modifiche non introducano
+          errori nel software esistente. Per questo motivo, il
+          <strong>CI</strong> viene spesso applicato in ambienti in cui siano
+          presenti sistemi di build automatico e/o esecuzione automatica di
+          test.
+        </p>
+      </div>
+      <div
+        class="tab-pane fade"
+        id="ci-list-p1"
+        role="tabpanel"
+        aria-labelledby="list-p1-list"
+      >
+        <p class="note note-info">
+          <strong>Differenza tra SVN e Git</strong>, entrambi sono sistemi di
+          controllo delle versioni che aiutano con il flusso di lavoro e la
+          gestione dei progetti, la differenza tra i sistemi di controllo della
+          versione Git e SVN è che Git è un sistema di controllo della versione
+          distribuita, mentre SVN è un sistema di controlla della versione
+          centralizzato. Git utilizzza più repository tra cui un repository
+          server e repository locali. SVN non ha una centralizzazione.
+        </p>
+        <p>
+          Git è un sistema di controllo della versione distribuito, il che
+          significa semplicemente che quando si esegue un clone git viene
+          ottenuta una copia completa dell'intera cronologia di quel progetto.
+        </p>
+        <p>
+          In SVN i dati vengono archiviati su un server centrale. Si ha in
+          locale l'intera repository e anche in modalità offline è possibile
+          eseguire commit, log, branch, merge, ecc...
+        </p>
+        <p>
+          SVN offre un approccio più facile per i managment, la sicurezza, le
+          autorizzazioni, i mirror e i dump, si dice inoltre che abbia maggiore
+          stabilità del trunk e avere tutto su un server centrale sembra più
+          controllato e sicuro.
+        </p>
+      </div>
+
+      <!--
+      <div class="tab-pane fade" id="ci-list-p6" role="tabpanel" aria-labelledby="list-p6-list">
+        <p>Qui trovi i vari test effettuati.</p>
+        <p class="note note-info">
+          <strong><a href="#">###</a></strong>
+        </p>
+      </div>
+    --></div>
+  </div>
+</div>
