@@ -1,0 +1,255 @@
+<h1>TDD e Junit (mock, spy, stub)</h1>
+<div class="row">
+  <div class="col-4">
+    <div class="list-group list-group-light" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active px-3 border-0" id="list-intro-list" data-mdb-toggle="list"
+        href="#tdd-list-intro" role="tab" aria-controls="list-intro">Introduzione</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p1-list" data-mdb-toggle="list"
+        href="#tdd-list-p1" role="tab" aria-controls="list-p1">Junit</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p4-list" data-mdb-toggle="list"
+        href="#tdd-list-p2" role="tab" aria-controls="list-p2">Annotazioni Assertions and Assumptions JUnit</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p3-list" data-mdb-toggle="list"
+        href="#tdd-list-p3" role="tab" aria-controls="list-p3">Test Suites</a> 
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p4-list" data-mdb-toggle="list"
+        href="#tdd-list-p4" role="tab" aria-controls="list-p">Mockito</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p5-list" data-mdb-toggle="list"
+        href="#tdd-list-p5" role="tab" aria-controls="list-p">Junit4 e Junit5</a>
+
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p6-list" data-mdb-toggle="list"
+        href="#tdd-list-p6" role="tab" aria-controls="list-p">Vari Test Fatti</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="tdd-list-intro" role="tabpanel" aria-labelledby="list-home-list">
+        <p>
+            In informatica, nello sviluppo software, il <strong>test-driven development</strong>
+             (TDD), in italiano sviluppo guidato dai test o sviluppo guidato dalle verifiche è un modello di 
+             sviluppo software che prevede che la stesura dei test automatici avvenga prima di quella del software 
+             che deve essere sottoposto a test, e che lo sviluppo del software applicativo sia 
+             orientato esclusivamente all'obiettivo di passare i test automatici precedentemente predisposti.
+        </p>
+        <p>
+            Più in dettaglio, il TDD prevede la ripetizione di un breve ciclo di sviluppo in tre fasi,
+             detto "ciclo TDD".
+        </p>
+        <p>Nella prima fase detta "fase rossa", il programmatore scrive un test automatico per 
+            la nuova funzione da sviluppare, che deve fallire in quanto la funzione non è ancora stata realizzata.
+
+        </p>
+        <p>Nella seconda fase detta "fase verde", il programmatore sviluppa la quantità minima di codice
+             necessaria per passare il test.
+        </p>
+        <p>Nella terza fase detta "fase grigia" o refactoring il programmatore esegue il refactoring 
+            del codice per adeguarlo a determinati standard di qualità.
+        </p>
+
+        <p class="note note-info">
+            <strong>TDD è una delle regole dell'extreme programming.</strong> 
+        </p>
+
+
+        <p class="note note-secondary">
+            I vantaggi dell'applicazione del TDD portano in generale allo sviluppo 
+            di un numero maggiore di test,
+             e una maggiore copertura di test del software prodotto,
+              rispetto alla pratica tradizionale di sviluppare i test dopo l'implementazione.
+        </p>
+      </div>
+      <div class="tab-pane fade" id="tdd-list-p1" role="tabpanel" aria-labelledby="list-p1-list">
+        <p>
+            Junit è un framework di unit testing per il linguaggio Java. L'esperienza 
+            avuta con JUnit è stata importante nella crescita dell'idea di sviluppo 
+            guidato da test (TDD), segue il modello: prima testa e poi codifica.
+        </p>
+        <p>Enfatizza dunque l'uso ripetuto dei test, per assicurare stabilità nel codice e 
+            ridurre le attività di debugging a posteriore. 
+         </p>
+        </p>   
+            Junit fornisce asserzioni per testare 
+            i risultati attesi, annotazioni per identificare i metodi di prova e test runner grafici e testuali.
+             Offre una suite per organizzare ed eseguire facilmente i test e permette la condivisione dei risultati.
+        </p>
+        <p class="note note-info">
+            <strong>Il testing unitario</strong> 
+          </p>
+          <p>
+            Unit test è il test di una piccola logica o di un codice 
+            per verificare che l'output del codice sia quello previsto, sull'input di dati specifici
+             e/o sul soddisfacimento di determinate condizioni. Di solito, i test unitari 
+             dovrebbero essere indipendenti dagli altri test.
+          </p>
+          <p>
+            Un unit test ha come obiettivo solo una piccola unità di codice cjhe potrebbe essere solo 
+            un metodo o una classe. Aiuta lo sviluppatore a scoprire problemi nella logica corrente e 
+            qualsiasi errore di regressione dovuto al cambiamento corrente. 
+            Inoltrefornisce anche informazioni su come il codice corrente potrebbe influire sull'implementazine futura.
+          </p>
+          <p>
+            L'esecuzione automatica dei test aiuta a identificare i problemi di regressione 
+            del software introdotti dalle modifiche nel codice corrente. Avere un'elevvata copertura di 
+            test del codice consente di continuare a sviluppare funzionalità senza dover eseguire molti test manuali.
+          </p>
+
+      </div>
+
+      <div class="tab-pane fade" id="tdd-list-p2" role="tabpanel" aria-labelledby="list-p2-list">
+
+        <p class="note note-info">Alcune annotazioni </p>
+
+        <ul class="list-group list-group-light">
+            <li class="list-group-item"><strong>
+                @BeforeAll and @BeforeEach
+            </strong>, sono dei metodi statici che vengono invocati con diversa logica.
+            Il primo eseguito una volta prima dei metodi di test nella classe è necessario 
+            che il metodo sia statico, il secondo 
+            prima di ogni metodo di test della classe.
+        
+        </li>
+            <li class="list-group-item"><strong>
+                @DisplayName and @Disabled
+            </strong>, con display name cambiamo il nome al test. Con disabled disabilitiamo il metodo.
+        
+        </li>
+    </li>
+    <li class="list-group-item"><strong>
+        @AfterEach and @AfterAll
+    </strong>, il primo eseguito dopo ogni metodo di test che termina l'esecuzione, il secondo 
+    dopo l'esecuzione di tutti i metodi di test, afterall deve essere un metodo statico.
+
+</li>
+        </ul>
+    
+        <p>JUnit 5 cerca di sfruttare le nuove funzionalità 
+            di Java 8, in particolare le lambda expression.
+        </p>
+
+        <br>
+        <br>
+        <p><strong>@RepetedTest</strong>, annotazione che permette di ripetere più volte un test, durante questi test ripetuti 
+        <strong>@BeforeEach e @AfterEach</strong> saranno richiamati nuovamente.</p>
+        <br>
+
+        <p>AssertAll, AssertNotNull, AssertEquals, AssertNull, AssertTrue</p>
+
+        <pre class="note note-secondary">
+            assertAll("Do many assertions.", () -> {
+                assertNotNull(actual, () -> "The actual is NULL");
+                assertEquals(expAge, actual,
+                    () -> "The expected is: " + expAge + " while the actual is:" + actual);
+              });
+            assertNull(actual, () -> "The actual is not null");
+            assertTrue(StringUtils.isNullOrBlanck(input), () -> "Ths string is null or black.");
+        </pre>
+
+        <p>AssertThrows</p>
+        <pre class="note note-secondary">
+            assertThrows(NumberFormatException.class, () -> {
+                StringUtils.convertToDouble(age);
+              });
+        </pre>
+
+        <p>AssertTrue, AssertFalse</p>
+
+        <pre class="note note-secondary">
+            assertTrue(StringUtils.isNullOrBlank(input),
+                 () -> "The string is not null or blank"
+            );
+            assertFalse(StringUtils.isNullOrBlank(input));
+        </pre>
+
+        <p>AssertSame, AssertNotSame, and Fail</p>
+
+        <pre class="note note-secondary">
+            assertSame(defaultSt, actual, 
+                () -> "Expected ouput is not same with actual"
+            );
+            assertNotSame(defaultSt, actual, 
+                () -> "Expected ouput is same with actual"
+            );
+            fail(() -> "The actual should be empty");
+        </pre>
+
+
+
+    </div>
+
+    <div class="tab-pane fade" id="tdd-list-p3" role="tabpanel" aria-labelledby="list-p3-list">
+        <p>
+            Aggregare più classi test in una test suite, in modo da eseguirli insieme. JUnit 
+            provvede due annotazioni <strong>@SelectPackage e @SelectClasses</strong>, per creare una test suite.
+        </p>
+        <p>
+          <strong>@SelectPackage</strong> è usato per specificare il nome del pacchetto dove sono presenti i test da eseguire.
+        </p>
+        <p>
+          Inoltre è possibile specificare un pacchetto da escludere mediante <strong>@ExcludePackages</strong>
+        </p>
+ 
+      </div>
+
+      <div class="tab-pane fade" id="tdd-list-p4" role="tabpanel" aria-labelledby="list-p4-list">
+        <p>Mockito è un framework open source per Java, Mockito consente agli sviluppatori di verificare il comportamento del sistema 
+          sottoposto a test in modo isolato e limitando il più possibile situazioni di side effect. 
+          Questo al fine di evitare che l’esecuzione del test porti a stati di inconsistenza che ne impediscano la ripetitività nel tempo.
+        </p>
+
+        <p>Caso tipico è quello in cui l’esecuzione del test comporta l’aggiornamento 
+          di informazioni su una base dati; operazione che se in generale non è desiderabile,
+           in quanto risultato di un test, dall’altro potrebbe modificare le condizioni
+            di test rendendone impossibile l’esecuzione ripetuta.
+        </p>
+
+        <p><strong>Mock Object</strong>, nella programmazione orientata agli oggetti l'isolamento dei test unitari può essere ottenuto utilizzando 
+        oggetti che simulano il comportamento degli oggetti reali, denominati mock object (oggetti mock). 
+        Utilizzeremo i mock object nei test unitari al fine di simulare il comportamento di oggetti complessi e non utilizzabili. Ovviamente l'oggetto mock deve esporre la stessa interfaccia 
+        dell'oggetto che simula, consentendo al client di ignorare se sta interagendo con l'oggetto reale o con quello simulato.
+      </p>
+      <p>
+        Mockito è uno dei framework più popolari per la realizzazione di oggetti mock.
+         Consente di generare un mock a partire sia da una interfaccia che da un classe semplicemente dichiarandone 
+         il comportamento, ed inoltre permette di eseguire diverse tipologie di test. 
+         
+         <p class="note note-info">
+          <strong>Vediamo quali sono i costrutti fondamentali del framework:</strong>
+        </p>
+
+         <ul class="list-group list-group-light">
+          <li class="list-group-item"><strong>mock() o @Mock</strong>: consentono la definizione di un oggetto 
+            mock al quale è poi possibile associare un comportamento ad esempio utilizzando i metodi when();</li>
+          <li class="list-group-item"><strong>spy() o @Spy</strong>: consentono di realizzare
+             mock parziale dell’oggetto permettendo quindi di invocare metodi reali;</li>
+          <li class="list-group-item"><strong>verify()</strong>: consente di verificare (testare) la corretta invocazione dei metodi.</li>
+        </ul>
+
+      </p>
+      <p>
+        Per costruire la nostra classe di test e attaccare l'estensione di Mockito useremo <strong>@ExtendWith(MockitoExtension.class)</strong> come 
+        annotazione sulla classe. Useremo poi <strong>@Mock</strong> per iniettare un istanza che possiamo utilizzare dovunque nella classe di test.
+         Possiamo anche usare @Mock per iniettare un oggetto mock nei parametri di un metodo.
+      </p>
+
+      </div>
+
+      <div class="tab-pane fade" id="tdd-list-p5" role="tabpanel" aria-labelledby="list-p5-list">
+        <p>
+            In JUnit5 l'annotazione <strong>@RunWith</strong> è stata rimpiazzata da una più potente <strong>@ExtendWith</strong>. 
+            Tuttavia l'annotazione può ancora essere utilizzata per la compatibilità a ritroso delle versioni.
+        </p>
+ 
+      </div>
+      
+
+      <div class="tab-pane fade" id="tdd-list-p6" role="tabpanel" aria-labelledby="list-p6-list">
+        <p>Qui trovi i vari test effettuati.</p>
+        <p class="note note-info">
+          <strong><a href="#">###</a></strong>
+        </p>
+      </div>
+
+
+  </div>
+  
+
+</div>
+

@@ -1,0 +1,130 @@
+<h1>HTTP/HTTPS, Paradigma REST</h1>
+<div class="row">
+  <div class="col-4">
+    <div class="list-group list-group-light" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active px-3 border-0" id="list-intro-list" data-mdb-toggle="list"
+        href="#rest-list-intro" role="tab" aria-controls="list-intro">Introduzione</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p1-list" data-mdb-toggle="list"
+        href="#rest-list-p1" role="tab" aria-controls="list-p1">HTTP</a>
+      <a class="list-group-item list-group-item-action px-3 border-0" id="list-p4-list" data-mdb-toggle="list"
+        href="#rest-list-p2" role="tab" aria-controls="list-p2">Paradigma REST</a>
+        <a class="list-group-item list-group-item-action px-3 border-0" id="list-p3-list" data-mdb-toggle="list"
+        href="#rest-list-p3" role="tab" aria-controls="list-p3">Vari Test Fatti</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="rest-list-intro" role="tabpanel" aria-labelledby="list-home-list">
+        <p>
+            HTTP e HTTPS costituiscono la parte iniziale di ogni URL; HTTP indica nessuna 
+            crittografia dei dati implementata, un protocollo di trasferimento di un ipertesto 
+            HTTP, fa in modo che un browser Web possa mettersi in contatto con il Server, al fine 
+            di poter comunicare tra loro e scambiarsi dati.
+        </p>
+        <p>
+            L'HTTP essendo un protocollo a livello applicativo, si focalizza esclusivamente sulla 
+            trasmissione dei dati, e quindi informazioni senza preoccuparsi del modo in cui 
+            queste viaggiano da un luogo a un altro. Le informazioni che circolano sotto questo protocollo 
+            possono essere facilmente intercettate, rendendo vulnerabile sia l'informazione stessa 
+            che chi la riceve. L'HTTP è anche chiamato "sistema senza stato".
+        </p>
+        <p>
+            HTTPS connessione rittografata, (Hyper Text Protocl over Secure Socket Layer) permette
+            anche lui di visualizzare attraverso il Browser Web i dati che vengono richiesti. L'HTTPS 
+            risulta essere più avanzato e sicuro, è un'estensione dell'HTTP dove la S sta per Secure.
+        </p>
+        <p>
+            Tale sicurezza è alimentata da una (TSL) Transport Layer Secure, predecessore di (SSL) 
+            Secure Socket Layer. Entrambi sono dei protocolli di sicurezza che garantiscono 
+            la protezione di una connessione internet, poteggendo tutti i dati sensibili che vengono scambiati 
+            tra il Client e il Server, evitando dunque che qualche malintenzionato possa accedervi. 
+            In aggiunta oltre a crittografare i dati trasmessi tra il Server e il Browser, la TLS autentica e verifica 
+            che il server a cui si sta effettuando la connessione sia sicuro, proteggendo i dati da qualunque manomissione.
+        </p>
+        <p>
+            Tutti i siti con modalità di pagamento devono essere conformi alla PCI DSS (
+                Payment Card Industry Data Security Standard). Per i creatori di siti l'HTTPS rappresenta 
+                anche una valida alternativa per migliorare la visibilità del proprio sito anche in termini di classifica 
+                e quindi visibilità (SEO search engine optimization).
+        </p>
+        <p class="note note-secondary">
+            <strong>Passaggio a HTTP,</strong> 
+            per passare a HTTPS bisogna acquistare un certificato SSL ed un IP dedicato. 
+            Installare e configurare il certificato SSL. Configurare eventuali link presenti da HTTP a 
+            HTTPS. Aggiornare le informazioni HTAaccess. Configurare il sito in HTTPS all'interno 
+            di Google Search Console e Google Analitycs.
+        </p>
+
+      </div>
+      <div class="tab-pane fade" id="rest-list-p1" role="tabpanel" aria-labelledby="list-p1-list">
+
+        <p>Le HTTP sono localizzate e identificate nel web grazie al sistema dell'Uniform Resource Identifiers (URI),
+            ovvero il comune indirizzo web. </p>
+        <p>Sessione HTTP, quando client e server si mettono in contatto 
+            l'uno con l'altro si stabilisce una sessione HTTP. Si tratta di una sequenza 
+            di richieste tra due nodi.
+        </p>
+        <p>Una sessione ha inizio quando il client stabilisce una connessione TCP con 
+            una particolare porta del server (tipicamente 8080) inviando una richiesta di informazioni o risorse.
+             Il server risponde con una linea di stato e un messaggio contenete le informazioni 
+             richieste o eventualmente un messaggio di errore.
+        </p>
+        <p>I metodi di richiesta del protocollo HTTP, affinchè lo scambio di informazioni vada 
+            a buon fine, il cliente deve inviare le proprie richieste seguendo una grammatica specifica 
+            e articolata. All'interno di questo schema troviamo alcune parole chiave dett iverbi che 
+            identificano l'azione richiesta dal client al server.
+        </p>
+
+        <p class="note note-info"><strong>Tra i verbi più comuni abbiamo: </strong></p>
+        <ul class="list-group list-group-light">
+            <li class="list-group-item">
+              <strong>GET</strong>, prendere, rappresenta la richiesta di una specifica 
+              risorsa ospitata sul server. Con questo comando è possibile recuperare il dato.
+            </li>
+            <li class="list-group-item">
+                <strong>HEAD</strong>, testa, stessa funzionalità di GET ma senza ottenere 
+                l'intero corpo della risposta limitandosi alle sole informazioni riassuntive presenti 
+                nell'intestazione. Utile nel caso si debbano recuperare delle meta informazioni 
+                scritte nell'header di una risorsa web senza essere costretti a scaricare l'intero documento.
+              </li>
+              <li class="list-group-item">
+                <strong>POST</strong>, spedire, richiede al server di accettare 
+                l'entità allegata al messaggio inviato. Può essere ad esempio una nota da apporre ad una 
+                risorsa esistente, un messaggio per una newsletter, un form o ecc..
+              </li>
+              
+              <li class="list-group-item">
+                <strong>DELETE</strong>, cancella, richiesta di cancellazione o eliminazione di una specifica risorsa dal server.
+              </li>
+          </ul>
+      </div>
+
+      <div class="tab-pane fade" id="rest-list-p2" role="tabpanel" aria-labelledby="list-p2-list">
+        <p><strong>REST</strong>,
+        acronimo di Representational state transfer, è un paradigma per la realizzazione di 
+        applicazioni Web che permette la manipolazione delle risorse per mezzo dei 
+        metodi GET,POST,PUT e DELETE del protocollo HTTP. Basato sul protocollo HTTP, il paradigma 
+        REST restringe il proprio campo d'ineresse alle applicazioni che utilizzano questo protocollo 
+        per la comunicazione con altri sistemi.
+        </p>
+        <p>
+            L'intero paradimga REST ruota intorno al concetto di risorsa, che diventa il protagonista 
+            di un network di servizi. REST è uno stile architetturale per sistemi distribuiti. I sistemi 
+            REST non prevedono il concetto di sessione, ovvero sono stateles. Lo strato dell'applicazione 
+            e le funzionalità sono divisi in risorse web.
+        </p>
+
+        </div>
+
+      <div class="tab-pane fade" id="rest-list-p3" role="tabpanel" aria-labelledby="list-p3-list">
+        <p>Qui trovi i vari test effettuati.</p>
+        <p class="note note-info">
+          <strong><a href="#">###</a></strong>
+        </p>
+      </div>
+
+  </div>
+  
+
+</div>
+

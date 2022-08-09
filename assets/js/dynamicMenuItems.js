@@ -18,4 +18,8 @@ function load_and_set(content, name) {
       "</a> </li>";
     $("#menu").append(str);
   }
+
+  $('#navbarTogglerDemo02 > ul > li').click( function() {
+    $(".navbar-toggler").click();
+  })
 }
