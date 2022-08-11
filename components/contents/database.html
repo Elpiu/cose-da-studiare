@@ -1,0 +1,464 @@
+<h1>Database</h1>
+<div class="row">
+    <div class="col-4">
+        <div class="list-group list-group-light" id="list-tab" role="tablist">
+            <a class="list-group-item list-group-item-action active px-3 border-0" id="list-intro-list"
+                data-mdb-toggle="list" href="#database-list-intro" role="tab" aria-controls="list-intro">Introduzione</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-p1-list" data-mdb-toggle="list"
+                href="#database-list-p1" role="tab" aria-controls="list-p1">DBMS</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-p4-list" data-mdb-toggle="list"
+                href="#database-list-p2" role="tab" aria-controls="list-p2">SQL, Tables & Key</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-p4-list" data-mdb-toggle="list"
+                href="#database-list-p3" role="tab" aria-controls="list-p3">JPA,ORM e Hibernate</a>
+
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-p4-list" data-mdb-toggle="list"
+                href="#database-list-p4" role="tab" aria-controls="list-p4">PostgreSQL</a>
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-p4-list" data-mdb-toggle="list"
+                href="#database-list-p5" role="tab" aria-controls="list-p5">Hana</a>
+
+            <a class="list-group-item list-group-item-action px-3 border-0" id="list-p6-list" data-mdb-toggle="list"
+                href="#database-list-p6" role="tab" aria-controls="list-p">Vari test Fatti</a>
+        </div>
+    </div>
+    <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="database-list-intro" role="tabpanel"
+                aria-labelledby="list-home-list">
+                <p class="note note-info">
+                    <strong>Cos'è un Database</strong>
+                </p>
+                <p>
+                    Un database è un insieme di informazioni (o dati) strutturate in genere archiviate elettronicamente
+                    in un sistema informatico. Di solito, il database viene controllato da un sistema DBMS (Database
+                    Management System). Si fa riferimento ai dati, al sistema DBMS e alle applicazioni associate come
+                    sistema di database, spesso abbreviato solo in database.
+                </p>
+                <p>
+                    I dati all'interno dei tipi più comuni di database attualmente in funzione vengono generalmente
+                    presentati in righe e colonne contenute in una serie di tabelle per garantire l'efficienza di
+                    elaborazione e query dei dati. Tali dati possono poi essere facilmente visualizzati, gestiti,
+                    modificati, aggiornati, controllati e organizzati. La maggior parte dei database utilizza il
+                    linguaggio SQL (Structured Query Language) per scrivere i dati ed eseguirne le query.
+                </p>
+                <p class="note note-info">
+                    <strong>che cos'è SQL</strong>
+                </p>
+                <p>
+                    SQL è un linguaggio di programmazione utilizzato da quasi tutti i database relazionali per eseguire
+                    query, manipolare e definire i dati, nonché fornire il controllo dell'accesso. Sviluppato per la
+                    prima volta negli anni '70 in IBM con l'importante contributo di Oracle, che ha determinato
+                    l'implementazione dello standard SQL ANSI, SQL è stato fonte di ispirazione per numerose estensioni
+                    create da aziende quali IBM, Oracle e Microsoft. Sebbene SQL sia ampiamente utilizzato ancora oggi,
+                    nuovi linguaggi di programmazione stanno iniziando a fare il loro ingresso sul mercato.
+                </p>
+                <p class="note note-secondary">
+                    <strong>Tipi di database</strong>
+                </p>
+                <p>
+                <ul class="list-group list-group-light">
+                    <li class="list-group-item"><strong>Database relazionali</strong>
+                        Gli elementi di un database relazionale sono organizzati sotto forma di set di tabelle composte
+                        da colonne e righe. La tecnologia di questo tipo di database offre la soluzione più efficiente e
+                        flessibile per accedere alle informazioni strutturate.
+                    </li>
+                    <li class="list-group-item"><strong>Database orientati agli oggetti</strong>
+                        Le informazioni contenute in un database orientato agli oggetti vengono rappresentate sotto
+                        forma di oggetti, come avviene nella programmazione che ha la stessa denominazione.
+                    </li>
+                    <li class="list-group-item"><strong>Database distribuiti</strong>
+                        Un database distribuito è composto da almeno due file presenti in sedi diverse. Il database può
+                        essere memorizzato su più computer che condividono la stessa posizione fisica o sono dislocati
+                        su reti differenti.
+                    </li>
+                    <li class="list-group-item"><strong>Database warehouse</strong>
+                        Un data warehouse, ossia un repository centralizzato per i dati, è un tipo di database
+                        progettato espressamente per query e analisi veloci.
+                    </li>
+                    <li class="list-group-item"><strong>Database NoSQL</strong>
+                        Un database NoSQL, o non relazionale, consente di archiviare e manipolare dati non strutturati e
+                        semi-strutturati, a differenza di quanto accade con un database relazionale che definisce come
+                        devono essere composti tutti i dati inseriti nel database. La diffusione dei database NoSQL è
+                        aumentata notevolmente con la crescente disponibilità e complessità delle applicazioni Web.
+                    </li>
+                </ul>
+                </p>
+
+            </div>
+
+            <div class="tab-pane fade" id="database-list-p1" role="tabpanel" aria-labelledby="list-p1-list">
+
+                <p class="note note-info">
+                    <strong>Software di database</strong>
+                </p>
+                <p>
+                    Il software di database viene utilizzato per creare, modificare e gestire file e record di database,
+                    consentendo una creazione più semplice di file e record, immissione di dati, modifica, aggiornamento
+                    e reporting dei dati. Il software gestisce anche lo storage, il backup e il reporting dei dati, il
+                    controllo di più accessi e la sicurezza. Oggi, è particolarmente importante poter contare su una
+                    sicurezza del database solida, poiché il furto di dati è sempre più frequente. Il software di
+                    database è talvolta indicato anche come "sistema di gestione dei database" (Database Management
+                    System, DBMS).
+                </p>
+                <p>
+                    Il software di database semplifica la gestione dei dati consentendo agli utenti di archiviare i dati
+                    in una forma strutturata e quindi accedervi. In genere, presenta un'interfaccia grafica per aiutare
+                    a creare e gestire i dati e, in alcuni casi, gli utenti possono creare i propri database utilizzando
+                    un software di database.
+                </p>
+                <p class="note note-info">
+                    <strong>DBMS</strong>
+                </p>
+
+                <p>
+                    Un database, in genere, richiede un software di database completo noto come DBMS, acronimo di
+                    Database Management System, ossia un sistema di gestione del database. Un DBMS agisce da interfaccia
+                    tra il database e gli utenti finali o i programmi per consentire agli utenti di recuperare,
+                    aggiornare e gestire il modo in cui le informazioni vengono organizzate e ottimizzate. Inoltre, un
+                    DBMS agevola la supervisione e il controllo dei database, rendendo disponibile un'ampia gamma di
+                    operazioni amministrative: monitoraggio delle performance, tuning e backup e ripristino.
+
+                    Alcuni esempi di software di database o sistemi DBMS più diffusi sono: MySQL, Microsoft Access,
+                    Microsoft SQL Server, FileMaker Pro, Oracle Database e dBASE.
+                </p>
+
+            </div>
+
+            <div class="tab-pane fade" id="database-list-p2" role="tabpanel" aria-labelledby="list-p2-list">
+
+                <p class="note note-info">SQL</p>
+                <p>
+                    SQL è un linguaggio per interrogare e gestire basi di dati mediante l'utilizzo di costrutti di
+                    programmazione denominati query. Con SQL si leggono, modificano, cancellano dati e si esercitano
+                    funzioni gestionali ed amministrative sul sistema dei database.
+                </p>
+                <p>
+                    Originariamente progettato come linguaggio di tipo dichiarativo, si è successivamente evoluto con
+                    l'introduzione di costrutti procedurali, istruzioni per il controllo di flusso, tipi di dati
+                    definiti dall'utente e varie altre estensioni del linguaggio. A partire dalla definizione dello
+                    standard SQL:1999 molte di queste estensioni sono state formalmente adottate come parte integrante
+                    di SQL nella sezione SQL/PSM dello standard.
+                </p>
+                <p>
+                    <strong>Struttura</strong>, essendo un linguaggio dichiarativo, SQL non richiede la stesura di
+                    sequenze di operazioni, piuttosto di specificare le propirità logiche delle informazioni richieste.
+                    Esso si divide in:
+                </p>
+                <ul class="list-group list-group-light">
+                    <li class="list-group-item">
+                        <strong>Data Definition Language (DDL) </strong>, permette di creare e cancellare database o di
+                        modificarne la struttura.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Data Manipulation Language (DML)</strong>, permette di inserire, cancellare, modificare
+                        i dati.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Data Control Language (DCL)</strong>, permette di gestire gli utenti e i permessi.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Query language (QL)</strong>, permette di interrogare il database, cioè di leggere i
+                        dati.
+                    </li>
+                    <li class="list-group-item">
+                        <strong>Device Media Control Language (DMCL)</strong>, permette di controllare i supporti
+                        (memorie di massa) dove vengono memorizzati i dati.
+                    </li>
+                </ul>
+
+                <p class="note note-info">Table</p>
+                <p>
+                    Una tabella in un database relazionale e in un database flat file è un insieme di elementi (valori)
+                    utilizzando un modello di colonne verticali (che sono identificate con il loro nome) e righe
+                    orizzontali, la cella del database è l'unità in cui una riga e colonna si intersecano.[1] Una
+                    tabella del database ha un numero già specificato di colonne, ma può avere un qualsiasi numero di
+                    righe.[2] Ogni riga è identificata dai valori che compaiono in un particolare sottoinsieme di
+                    colonna che è stata identificata come una chiave univoca, l'indice.
+                </p>
+                <p class="note note-info">Key</p>
+                <p>
+                    <strong>Chiave primaria o Primary Key</strong>, , nel modello relazionale delle basi di dati, è un
+                    insieme di attributi che permette di individuare univocamente un record o tupla o ennupla in una
+                    tabella o relazione.
+                    La chiave primaria è costituita da una o più colonne della tabella (in questo secondo caso viene
+                    definita chiave composta). La chiave primaria è unica per ogni tabella. L'esistenza della chiave
+                    primaria, che al più è formata da tutti gli attributi o campi dato della relazione, è garantita
+                    dall'unicità delle n-uple (o tuple) individuate da una relazione tra n insiemi. Una tabella deve
+                    obbligatoriamente possedere una e una sola chiave primaria, e nessun record nella tabella può avere
+                    il valore, o i valori, di un campo attributo identificato dalla chiave primaria identico a quello di
+                    un qualsiasi altro valore della stessa (vincolo di unicità): il tentativo di inserimento di un tale
+                    valore genera un errore di violazione della chiave primaria.
+                </p>
+
+                <p>
+                    <strong>Chiave esterna o foreign key</strong>, nel contesto dei database relazionali, è un vincolo
+                    di integrità referenziale tra due o più tabelle. Essa identifica una o più colonne di una tabella,
+                    detta tabella referenziante, che referenzia una o più colonne di un'altra tabella, detta
+                    referenziata.
+                    I valori di un record delle colonne referenzianti devono essere presenti in un unico record della
+                    tabella referenziata. Ciò implica che un record nella tabella referenziante non può contenere valori
+                    che non esistono nella tabella referenziata, eccetto nel caso particolare di valori NULL se la
+                    colonna referenziante non è obbligatoria. Più record della tabella referenziante possono puntare
+                    allo stesso record della tabella referenziata. Nella maggior parte dei casi, ciò corrisponde alla
+                    relazione "uno a molti" tra una tabella padre ed una tabella figlio. La tabella referenziante e
+                    quella referenziata possono essere la stessa tabella. Una chiave esterna di questo tipo è anche
+                    chiamata auto-referenziante o ricorsiva. Una tabella può avere molte chiavi esterne e ogni chiave
+                    esterna può referenziare una tabella diversa.
+
+                </p>
+                <p>
+                    Quando nella tabella referenziata si verifica un cambiamento che interessa la chiave esterna,
+                    un'azione può essere eseguita automaticamente dal DBMS per garantire l'integrità. L'azione specifica
+                    da eseguire può essere scelta dall'utente, chiave per chiave. Gli eventi che interessano la chiave
+                    primaria sono due: ON DELETE si verifica quando viene chiesta la cancellazione di un record nella
+                    tabella referenziata; ON UPDATE si verifica quando si tenta di modificare uno o più campi
+                    referenziati dalla chiave esterna.
+                </p>
+
+
+                <p class="note note-info">Join</p>
+                <p>
+                    Il JOIN è una clausola del linguaggio SQL che serve a combinare le tuple di due o più relazioni di
+                    una base di dati. Lo standard ANSI definisce alcune specifiche per il linguaggio SQL sul tipo di
+                    JOIN da effettuare: INNER, FULL, LEFT e RIGHT, alle quali diversi DBMS aggiungono CROSS. In alcuni
+                    casi è possibile che una tabella possa essere combinata con se stessa, in questo caso si parlerà di
+                    self-join.
+                </p>
+                <ul class="list-group list-group-light">
+                    <li class="list-group-item"><strong>Inner join</strong>, Una inner join crea una nuova tabella
+                        combinando i valori delle due tabelle di partenza (A and B) basandosi su una certa regola di
+                        confronto. La query compara ogni riga della tabella A con ciascuna riga della tabella B cercando
+                        di soddisfare la regola di confronto definita. Quando la regola di join viene soddisfatta, i
+                        valori di tutte le colonne delle tabelle A e B vengono combinate in un'unica riga nella
+                        costruzione della tabella risultante. La inner join è la forma di join usata più di frequente
+                        nelle applicazioni e rappresenta la modalità predefinita.</li>
+                    <li class="list-group-item"><strong>Equi-join</strong>, La equi-join, altrimenti conosciuta come
+                        equijoin, ha un particolare tipo di comparatore, detto theta join, che utilizza come metodo di
+                        verifica, solamente l'uguaglianza matematica come regola di confronto.</li>
+                    <li class="list-group-item"><strong>Natural join</strong>, Una natural join offre ulteriori
+                        specializzazioni di equi-join. Solitamente la join confronta colonne di tabelle diverse che
+                        hanno lo stesso nome. La natural join fa proprio questo.</li>
+                    <li class="list-group-item"><strong>Cross join</strong>, Una cross join, cartesian join o product
+                        fornisce le basi (le infrastrutture informatiche) attraverso cui tutti i tipi di inner join
+                        operano. Il risultato di una cross join è il prodotto cartesiano di tutte le righe delle tabelle
+                        che concorrono alla query di join. È come dire che stiamo facendo una inner join senza impostare
+                        la regola di confronto o in cui la regola di confronto ritorna sempre vero.</li>
+                    <li class="list-group-item"><strong>Outer join</strong>, Una outer join non richiede che ci sia
+                        corrispondenza esatta tra le righe di due tabelle. La tabella risultante da una outer join
+                        trattiene tutti quei record che non hanno alcuna corrispondenza tra le tabelle. Le outer join si
+                        suddividono in left outer join, right outer join, e full outer join, in base a quale sia la
+                        tabella di cui intendiamo trattenere i valori in caso di mancata corrispondenza della regola di
+                        confronto da (sinistra, destra, o entrambi).</li>
+                    <li class="list-group-item"><strong>Left outer join</strong>, Il risultato di una query left outer
+                        join (o semplicemente left join) per le tabelle A e B contiene sempre tutti i record della
+                        tabella di sinistra ("left") A, mentre vengono estratti dalla tabella di destra ("right") B
+                        solamente le righe che trovano corrispondenza nella regola di confronto della join. Questo
+                        significa che se la clausola ON trova 0 (zero) righe in B, la join mostrerà una riga risultante
+                        con valore NULL in tutte le colonne corrispondenti al risultato per le colonne di B.</li>
+                    <li class="list-group-item"><strong>Right outer join</strong>, Una right outer join (o right join)
+                        semplicemente ricalca il funzionamento della left outer join, ma invertendo l'ordine delle
+                        tabelle interessate.
+
+                        Il risultato di una query right outer join per le tabelle A e B contiene sempre tutti i record
+                        della tabella di destra ("right") B, mentre vengono estratti dalla tabella di sinistra ("left")
+                        A solamente le righe che trovano corrispondenza nella regola di confronto della join. Questo
+                        significa che se la clausola ON trova 0 (zero) righe in A, la join mostrerà una riga risultante
+                        con valore NULL in tutte le colonne corrispondenti al risultato per le colonne di A.</li>
+                    <li class="list-group-item"><strong>Full outer join</strong>, Una full outer join combina i
+                        risultati delle due tabelle A e B tenendo conto di tutte le righe delle tabelle, anche di quelle
+                        che non hanno corrispondenza tra di loro.
+
+                        Il risultato di una query full outer join per le tabelle A e B contiene sempre tutti i record
+                        della tabella di sinistra ("left") A, estraendo dalla tabella di destra ("right") B solamente le
+                        righe che trovano corrispondenza nella regola di confronto della join; inoltre verranno estratti
+                        tutti i record della tabella di sinistra ("left") A che non trovano corrispondenza nella tabella
+                        di destra ("right") B impostando a NULL i valori di tutte le colonne della tabella B e tutti i
+                        record della tabella di destra ("right") B che non trovano corrispondenza nella tabella di
+                        sinistra ("left") A impostando a NULL i valori di tutte le colonne della tabella A.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="tab-pane fade" id="database-list-p3" role="tabpanel" aria-labelledby="list-p3-list">
+
+                <p class="note note-info">
+                    <strong>JPA</strong>, Le Java Persistence API, talvolta riferite come JPA, sono un framework per il
+                    linguaggio di programmazione Java che si occupa della gestione della persistenza dei dati di un DBMS
+                    relazionale nelle applicazioni che usano le piattaforme Java Platform, Standard Edition e Java
+                    Enterprise Edition.
+                </p>
+                <p class="note note-info">
+                    <strong>ORM</strong>, In informatica l'Object-Relational Mapping (ORM) è una tecnica di
+                    programmazione che favorisce l'integrazione di sistemi software aderenti al paradigma della
+                    programmazione orientata agli oggetti con sistemi RDBMS.
+                    Un prodotto ORM fornisce, mediante un'interfaccia orientata agli oggetti, tutti i servizi inerenti
+                    alla persistenza dei dati, astraendo nel contempo le caratteristiche implementative dello specifico
+                    RDBMS utilizzato.
+                </p>
+                <p>I vantaggi nell'uso di un tale sistema sono i seguenti.</p>
+                <ul class="list-group list-group-light">
+                    <li class="list-group-item">Il superamento (più o meno completo) dell'incompatibilità di fondo tra
+                        il progetto orientato agli oggetti ed il modello relazionale sul quale è basata la maggior parte
+                        degli attuali RDBMS utilizzati.</li>
+                    <li class="list-group-item">Un'elevata portabilità rispetto alla tecnologia DBMS utilizzata:
+                        cambiando DBMS non devono essere riscritte le routine che implementano lo strato di persistenza;
+                        generalmente basta cambiare poche righe nella configurazione del prodotto per l'ORM utilizzato.
+                    </li>
+                    <li class="list-group-item">Drastica riduzione della quantità di codice sorgente da redigere; l'ORM
+                        maschera dietro semplici comandi le complesse attività di creazione, prelievo, aggiornamento ed
+                        eliminazione dei dati (dette CRUD - Create, Read, Update, Delete). Tali attività occupano di
+                        solito una buona percentuale del tempo di stesura, testing e manutenzione complessivo. Inoltre,
+                        sono per loro natura molto ripetitive e, dunque, favoriscono la possibilità che vengano commessi
+                        errori durante la stesura del codice che le implementa.</li>
+                    <li class="list-group-item">Suggerisce la realizzazione dell'architettura di un sistema software
+                        mediante approccio stratificato, tendendo pertanto ad isolare in un solo livello la logica di
+                        persistenza dei dati, a vantaggio della modularità complessiva del sistema.</li>
+                </ul>
+
+                <p class="note note-info">
+                    <strong>Hibernate</strong>, In informatica Hibernate è una piattaforma middleware open source per lo
+                    sviluppo di applicazioni Java, attraverso l'appoggio al relativo framework, che fornisce un servizio
+                    di Object-relational mapping (ORM) ovvero gestisce la persistenza dei dati sul database attraverso
+                    la rappresentazione e il mantenimento su database relazionale di un sistema di oggetti Java.
+                    Nell'ambito dello sviluppo di applicazioni web, tale strato software si frappone tra il livello
+                    logico di business o di elaborazione e quello di persistenza dei dati sul database (Data Access
+                    Layer).
+                </p>
+                <p>
+                    L'obiettivo di Hibernate è quello di esonerare lo sviluppatore dall'intero lavoro relativo alla
+                    persistenza dei dati. Hibernate si adatta al processo di sviluppo del programmatore, sia se si parte
+                    da zero sia se da un database già esistente. Hibernate genera le chiamate SQL e solleva lo
+                    sviluppatore dal lavoro di recupero manuale dei dati e dalla loro conversione, mantenendo
+                    l'applicazione portabile in tutti i database SQL. Hibernate fornisce una persistenza trasparente per
+                    Plain Old Java Object (POJO); l'unica grossa richiesta per la persistenza di una classe è la
+                    presenza di un costruttore senza argomenti. In alcuni casi si richiede un'attenzione speciale per i
+                    metodi equals() e hashcode()[1].
+
+                    Hibernate è tipicamente usato sia in applicazioni Swing che Java EE facenti uso di servlet o EJB di
+                    tipo session beans.
+                </p>
+
+            </div>
+
+
+            <div class="tab-pane fade" id="database-list-p4" role="tabpanel" aria-labelledby="list-p4-list">
+                <p class="note note-info">
+                    <strong>PostgreSQL</strong>, è un completo DBMS ad oggetti rilasciato con licenza libera (stile
+                    Licenza BSD). Spesso abbreviato come "Postgres", sebbene questo sia un nome vecchio dello stesso
+                    progetto, è una reale alternativa sia rispetto ad altri prodotti liberi come MySQL, Firebird SQL e
+                    MaxDB che a quelli a codice chiuso come Oracle, IBM Informix o DB2 ed offre caratteristiche uniche
+                    nel suo genere che lo pongono per alcuni aspetti all'avanguardia nel settore delle basi di dati.
+                </p>
+
+            </div>
+
+            <div class="tab-pane fade" id="database-list-p5" role="tabpanel" aria-labelledby="list-p5-list">
+                <p class="note note-info">
+                    <strong>SAP HANA</strong>, SAP HANA (High-performance ANalytic Appliance) è un database
+                    multi-modello che archivia i dati nella propria memoria invece di archiviarli su disco. Questo
+                    determina un'elaborazione dati molto più veloce di quella dei sistemi di dati basati su disco,
+                    consentendo l' analitica avanzata in tempo reale.
+
+                </p>
+                <p>
+                    Fungendo da piattaforma per il software ERP (enterprise resource planning) ed altre applicazioni
+                    aziendali, SAP HANA può essere installato in locale, nel cloud o in entrambi i modi, in un sistema
+                    cloud ibrido .
+                </p>
+                <br>
+                <p>
+                    SAP HANA integra i dati provenienti da più aree all'interno di un'organizzazione, ad esempio:
+                <ul class="list-group list-group-light">
+                    <li class="list-group-item ">Documenti aziendali tradizionali, inclusi contratti e fogli di calcolo
+                    </li>
+                    <li class="list-group-item">UX/UI (esperienza utente/interfaccia utente) – inclusi moduli di siti
+                        web, e-mail e altre interazioni dei clienti</li>
+                    <li class="list-group-item">Mobile – informazioni dai dispositivi mobili dei clienti e dalla propria
+                        forza lavoro</li>
+                    <li class="list-group-item">IoT (Internet of Things) - dati dai numerosi sensori in esecuzione in
+                        ogni settore dell'azienda, da magazzini e mezzi di trasporto a negozi e uffici</li>
+                </ul>
+                <br>
+                Il sistema SAP HANA non solo integra tutti questi dati; può anche applicare il machine learning e l'AI
+                per analizzarli istantaneamente in modo approfondito, accelerando il processo decisionale in tempo reale
+                fornendo insight fondamentali sulle operazioni dell'azienda.
+                </p>
+                <p>
+                    Molte organizzazioni dispongono di grandi quantità di dati che si trovano essenzialmente in un data
+                    warehouse e non forniscono alcun valore, pari a terabyte di potenzialità non sfruttate che
+                    potrebbero essere utilizzate per accelerate impatto di business e fornire un maggiore valore per il
+                    cliente.
+                </p>
+                <p>
+                    Con la rapida elaborazione in-memory e l'analisi dei dati in tempo reale basate sul machine
+                    learning, SAP HANA sfrutta i dati di un'azienda e li rende operativi, semplificando i processi,
+                    eliminando gli errori e offrendo vantaggi a clienti e dipendenti. Migliora la soddisfazione del
+                    cliente con un prodotto sempre disponibile accessibile da qualsiasi smart phone. Rendi felici i
+                    dipendenti con processi di contabilità semplificati, aggiornamenti istantanei su benefit o giorni di
+                    ferie e piattaforme di collaborazione potenziate. Inoltre, aiuta manager e dirigenti a pianificare
+                    il futuro con l'analisi predittiva in grado di prevedere problematiche della supply chain, gestire
+                    il flusso di cassa e integrare i flussi di lavoro dei team per aumentare l'efficienza.
+                </p>
+
+                <p class="note note-info">Funzioni di SAP HANA</p>
+                <p>
+                    Il motore di gestione dei dati multi-modello in-memory di SAP HANA sfrutta completamente le
+                    funzionalità del proprio hardware per ridurre al minimo lo spostamento dei dati, aumentando così la
+                    velocità e l'agilità dell'applicazione durante l'analisi dei dati in tempo reale.
+                </p>
+                <p>
+                    A seconda delle esigenze dell'azienda, SAP HANA può essere distribuito in locale, nel cloud o come
+                    sistema ibrido, combinando la privacy e il controllo di un sistema on-premises con i costi ridotti,
+                    la maggior memoria e l'accesso incrementato del cloud. La sua capacità di elaborare in modo
+                    efficiente enormi quantità di dati lo rende facilmente adattabile ad un'azienda in crescita senza
+                    sacrificare la sicurezza o la stabilità.
+                </p>
+                <p>
+                    Sulla piattaforma SAP HANA, gli sviluppatori possono creare strumenti e applicazioni che integrano
+                    la logica di business, la logica di controllo ed il livello di database, con prestazioni senza
+                    precedenti.
+                </p>
+                <br>
+                <ul class="list-group list-group-light">
+                    <li class="list-group-item"><strong>Miglioramento del database</strong>, La maggior parte dei
+                        database sono organizzati intorno ad un singolo modello di dati che limita le modalità di
+                        organizzazione, memorizzazione e manipolazione dei dati. Il database multi-modello di SAP HANA
+                        supporta più modelli di dati rispetto ad un singolo backend integrato, semplificando la
+                        creazione di relazioni tra i punti di dati.</li>
+                    <li class="list-group-item"><strong>Miglioramento della gestione dei dati</strong>, La tecnologia
+                        in-memory di SAP HANA ha posto fine alla complessa elaborazione in batch, mantenendo tutti i
+                        dati altamente disponibili senza latenza - tutti i processi vengono eseguiti in tempo reale. Le
+                        aziende possono semplificare notevolmente i propri sistemi di gestione e modificarli in base
+                        alle necessità per migliorare l'efficienza.</li>
+                    <li class="list-group-item"><strong>Elaborazione analitica avanzata</strong>, L'analisi in tempo
+                        reale consente di sfruttare enormi quantità di dati, come quelli provenienti dai sensori IoT e
+                        dai dispositivi mobili. Il motore di machine learning di SAP HANA estrae i dati e scrive sul
+                        server in tempo reale, identificando immediatamente i problemi e le soluzioni di ingegneria in
+                        ogni settore di un'azienda, dal libro paga alle risorse umane, all'assistenza clienti, alla
+                        gestione dei fornitori e altro ancora.</li>
+                    <li class="list-group-item"><strong>Sviluppo delle applicazioni</strong>, Sul database SAP HANA
+                        viene eseguito un sistema di stack software che funge da server tech-agnostic per qualsiasi
+                        applicazione basata su web - SAP o non SAP - che lo sviluppatore sceglie di creare. Poiché il
+                        server può interagire con tutti i tipi di file scambiare dati con qualsiasi software, le aziende
+                        possono rapidamente sviluppare e distribuire query e processi personalizzati utili unicamente
+                        per loro.</li>
+                    <li class="list-group-item"><strong>Miglioramento degli strumenti</strong>, L'elaborazione analitica
+                        avanzata di SAP HANA consente agli sviluppatori di creare strumenti semplici che i team
+                        aziendali possono utilizzare facilmente per creare report personalizzati - senza l'aiuto di
+                        consulenti IT o esterni.</li>
+                </ul>
+            </div>
+
+
+
+            <div class="tab-pane fade" id="database-list-p6" role="tabpanel" aria-labelledby="list-p6-list">
+                <p>Qui trovi i vari test effettuati.</p>
+                <p class="note note-info">
+                    <strong><a href="#">###</a></strong>
+                </p>
+            </div>
+
+
+        </div>
+
+
+    </div>
