@@ -16,6 +16,9 @@ Main folder [Qui](esercitazioni/)
 * [3](esercitazioni/maven/OtherMultiModuleProject/)
 * [4](esercitazioni/maven/Spring%20MultiModule/)
 
+#### Full Application
+  * [1](esercitazioni/spring/Testing-Rest-Swagger-Bean/)
+
 
 
 ### Hosted by GitHub Pages
