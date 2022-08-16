@@ -1,4 +1,4 @@
-package exception;
+package com.example.SpringPostgreapp.exception;
 
 public class ResourceNotFoundException extends Exception {
     public ResourceNotFoundException(String s) {

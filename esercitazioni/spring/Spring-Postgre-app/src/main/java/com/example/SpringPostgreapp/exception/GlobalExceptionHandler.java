@@ -1,4 +1,4 @@
-package exception;
+package com.example.SpringPostgreapp.exception;
 
 
 import org.springframework.http.HttpStatus;
@@ -11,8 +11,8 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 import java.util.Date;
 
 
-/*
 
+/*
 @ControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 

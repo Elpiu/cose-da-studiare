@@ -5,7 +5,7 @@
 
 
 usato spring validation per le entity
-
+usato java faker
 usato global exception handler
 
 

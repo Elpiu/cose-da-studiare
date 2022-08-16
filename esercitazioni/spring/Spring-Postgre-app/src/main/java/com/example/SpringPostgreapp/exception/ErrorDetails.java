@@ -1,4 +1,4 @@
-package exception;
+package com.example.SpringPostgreapp.exception;
 
 import lombok.Data;
 

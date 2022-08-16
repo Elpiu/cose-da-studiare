@@ -1,4 +1,4 @@
-package model;
+package com.example.SpringPostgreapp.model;
 
 public  class Regex {
 
