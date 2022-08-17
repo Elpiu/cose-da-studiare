@@ -23,7 +23,7 @@ Main folder [Qui](esercitazioni/)
 
 
 ### Hosted by GitHub Pages
-https://elpiu.github.io/cose-da-studiare/
+https://elpiu.github.io/my-back-end-dev-training/
 
 # Contenuti
 <div>
