@@ -18,6 +18,7 @@ Main folder [Qui](esercitazioni/)
 
 #### Full Application
   * [1](esercitazioni/spring/Testing-Rest-Swagger-Bean/)
+  * [2](esercitazioni/spring/Spring-Postgre-app/)
 
 
 
