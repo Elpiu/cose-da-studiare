@@ -4,7 +4,7 @@ Piccolo e-Book con una lista di argomenti da studiare per la mia posizione da Ba
 
 Nel book sono inoltre presenti vari progetti esempio per il test degli argomenti.
 
-[Dai un'occhiata ora](https://elpiu.github.io/cose-da-studiare/)
+[Dai un'occhiata ora](https://elpiu.github.io/my-back-end-dev-training/)
 
 
 # Progetti svolti
