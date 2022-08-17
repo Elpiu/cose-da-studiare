@@ -4,6 +4,7 @@ package com.example.SpringPostgreapp.controller;
 import com.example.SpringPostgreapp.repository.EmployRepository;
 import com.example.SpringPostgreapp.exception.ResourceNotFoundException;
 import com.example.SpringPostgreapp.model.Employe;
+import com.example.SpringPostgreapp.service.GeneratorEntitys;
 import com.github.javafaker.Faker;
 import io.swagger.v3.oas.annotations.Operation;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,10 +21,13 @@ import java.util.Map;
 @RequestMapping("/api/")
 public class EmployeController {
 
-    private Faker faker = new Faker();
+
 
     @Autowired
     private EmployRepository empoRepo;
+
+    @Autowired
+    private GeneratorEntitys generator;
 
     @Operation(summary = "Restituisce tutti gli employes")
     @GetMapping("employes")
@@ -95,15 +99,8 @@ public class EmployeController {
         ArrayList<Employe> list = new ArrayList<>();
         if(number <= 0) return list;
 
-        for (int i = 0; i < number && i < 500; i++) {
-            Employe e = new Employe();
-            e.setEmail(faker.internet().emailAddress());
-            e.setFristname(faker.name().firstName());
-            e.setLastname(faker.name().lastName());
-            e.setUsername(faker.name().username()); //Genera Username non validi
-            e.setAge(faker.random().nextInt(17,90));
-            list.add(e);
-        }
+        for (int i = 0; i < number && i < 500; i++) list.add(generator.generateEmploye());
+
         list = (ArrayList<Employe>) empoRepo.saveAll(list);
         return list;
     }

@@ -2,17 +2,30 @@
 
 ### Progetto inizializzato con [spring initializr](https://start.spring.io/)
 
-
-
-usato spring validation per le entity
-usato java faker
-usato global exception handler
-
-
 #### Database PostgreSQL
 
-////Where i am, l'app runna ma non va sulla root e non vede nessun controller, in più non vede neanche 
-le repository.
+# Dettagli
+* Spring boot
+* JDK 1.8
+* Spring Framework
+* Hibernate
+* JPA
+* Maven
+* IntelliJ
+* PostgreSQL
+* Swagger
 
-Repository guida --> https://github.com/RameshMF/springboot-postgresql-hibernate-crud-example
-Next video to watch --> https://www.youtube.com/watch?v=8SGI_XS5OPw
+Faker dependency per la creazione di Entity con dati casuali.
+
+Non sono stati implementati i Service, i controller utilizzano direttamente le Repository.
+
+Si è utilizzato anche spring validation per impostare alcune regex sulle entity.
+
+Utilizzato anche global exception handler per la gestione delle eccezioni.
+
+Sono stati eseguiti solo alcuni test.
+
+![](img/ER-relational.png)
+
+![](img/screencapture.png)
+

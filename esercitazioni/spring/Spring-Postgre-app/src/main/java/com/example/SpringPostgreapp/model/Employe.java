@@ -6,13 +6,14 @@ import lombok.Data;
 
 import javax.persistence.*;
 import javax.validation.constraints.*;
+import java.io.Serializable;
 import java.util.Date;
 
 
 @Data
 @Entity
 @Table(name = "employe")
-public class Employe {
+public class Employe   {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -58,14 +59,12 @@ public class Employe {
         this.age = age;
     }
 
-    @SuppressWarnings("unused")
     @PrePersist
     private void onInsert() {
         this.insertTimestamp = new Date();
         this.updateTimestamp = this.insertTimestamp;
     }
 
-    @SuppressWarnings("unused")
     @PreUpdate
     private void onUpdate() {
         this.updateTimestamp = new Date();
