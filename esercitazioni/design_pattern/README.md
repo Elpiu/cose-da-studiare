@@ -5,6 +5,7 @@
 
 -[ ] Creazionali
   - [X] Abstract Factory
+  - [X] Builder
 
 -[ ] Comportamentali
 
