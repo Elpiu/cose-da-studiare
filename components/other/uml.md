@@ -1,6 +1,6 @@
 # Unified Modeling Language
 
-![uml](../../assets/images/umlImg/uml-pic.jpg)
+![uml](./assets/images/umlImg/uml-pic.jpg)
 
 ## Intro 
  In ingegneria del software, UML (linguaggio di modellazione unificato) è un linguaggio di modellazione e di specifica basato sul paradigma orientato agli oggetti. 
@@ -17,7 +17,7 @@ UML non definisce alcuno specifico metodo per la creazione di modelli. UML può 
 ---
 
 ### UML diagram type
-![uml-Types](../../assets/images/umlImg/UML-Diagram-types.png)
+![uml-Types](./assets/images/umlImg/UML-Diagram-types.png)
 
 ---
 # Class Diagram
@@ -28,7 +28,7 @@ Prima degli attributi e dei metodi vengono i modificatori di accesso, + per Publ
 
 ### Relazioni tra classi
 
-![relazioni class diagram](../../assets/images/umlImg/Uml_classes_relazioni.png)
+![relazioni class diagram](./assets/images/umlImg/Uml_classes_relazioni.png)
 
 ##### Association
 Se due classi interagiscono tra di loro allora questo ne implica un associazione, le due classi vengono collegate da una linea. Spesso viene anche indicato la molteplicità ovvero il numero di oggetti che prendono parte alla relazione (One to One, One to Many, Many to Many).
@@ -53,7 +53,7 @@ Simile all'aggregazione ma una volta che l'aggregatore viene distrutto anche le 
 Un diagramma dei componenti, noto anche come diagramma dei componenti UML, descrive l'organizzazione e il cablaggio dei componenti fisici in un sistema. I diagrammi dei componenti sono spesso disegnati per aiutare a modellare i dettagli di implementazione e verificare che ogni aspetto delle funzioni richieste del sistema sia coperto dallo sviluppo pianificato.
 Il component diagram è simile al class diagram ma fa un focus sui componenti del sistema, rappresenta il funzionamento del sistema più ad alto livello dove ogni componente è responsabile di un obiettivo e interagisce con altri componenti.
 
-![component diagram](../../assets/images/umlImg/uml-component-diagram.jpg)
+![component diagram](./assets/images/umlImg/uml-component-diagram.jpg)
 
 ##### Component
 Un componente è un blocco di unità logica del sistema, un'astrazione leggermente superiore rispetto alle classi. È rappresentato come un rettangolo con un rettangolo più piccolo nell'angolo in alto a destra con le schede o la parola scritta sopra il nome del componente per distinguerlo da una classe.
@@ -72,7 +72,7 @@ Le prote sono rappresentate utilizzando un quadrato lungo il bordo del sistema o
 Il deployment diagram illustra le configurazioni a runtime e i componenti, descrive un sistema in termini di risorse hardware, dette nodi, e di relazioni fra esse.
 Spesso si utilizza il diagramma anche per le componenti software.
 
-![Deployment diagram](../../assets/images/umlImg/Deployment_8_Final.webp)
+![Deployment diagram](./assets/images/umlImg/Deployment_8_Final.webp)
 
 ##### Nodo
 Il nodo è raooresentato tramite un cubo ed un nome, raffigura una risorsa hardware disponibile dal sistema.
@@ -84,7 +84,7 @@ Il diagramma descrive le relazioni in termini di linee che uniscono i diversi no
 # Object Diagram
 L'object Diagram o Diagramma degli oggetti è un diagramma di tipo statico previsto dall'UML per descrivere un sistema in termini di oggetti e relative relazioni. Il diagramma è molto simile a quello del Class Diagram e descrive gli oggetti e le relative relazioni che sono istanziate in un determinato tempo t+1.
 
-![Object diagram](../../assets/images/umlImg/Object_diagram.png)
+![Object diagram](./assets/images/umlImg/Object_diagram.png)
 
 --- 
 # Package Diagram
@@ -92,7 +92,7 @@ Un package è usato per raggruppare elementi e fornire un namesapce per gli elem
 Rende immediato le dipendenze tra le varie parti del sistema, utile anche per organizzare l'ordine di compilazione. I package diagram è usato soprattutto per strutturare ad alto livello il sistema. Ogni package ha il suo nome che deve essere unico. 
 
 
-![package diagram](../../assets/images/umlImg/08-package-diagram-order-subsystem.png)
+![package diagram](./assets/images/umlImg/08-package-diagram-order-subsystem.png)
 
 --- 
 Behavioral Diagrams
@@ -132,7 +132,7 @@ Le relazioni di estensione e inclusione rappresentano concetti vicini, l'ordinam
 - I diagrammi dei casi d'uso dovrebbero essere inizialmente scritti nel modo più semplice e al più alto livello possibile.
 - I diagrammi use case sono basati sulle funzionalità e dovrebbero concentrarsi su "what" e non "how".
 
-![use case diagram](../../assets/images/umlImg/use_case_diagram.png)
+![use case diagram](./assets/images/umlImg/use_case_diagram.png)
 
 --- 
 # Activity Diagram
@@ -144,17 +144,17 @@ Il nodo iniziale (cerchietto tutto nero) è l'inizio della nostra attività, le 
 ##### Responsabilità
 Il sistema o l'attore responsabile di una determinata attività è rappresentato tramite una descrizione a cui afferisce una porzione dello schema, individuata da una linea verticale (swimlane).
 
-![activity diagram](../../assets/images/umlImg/activity_diagram.png)
+![activity diagram](./assets/images/umlImg/activity_diagram.png)
 
 --- 
 # State Diagram
 State diagram (o state machine diagrams) mostrano come un entità reagisce e si muove ai vari eventi, muovendosi da uno stato all'altro. Mostra come un oggetto reagisce in modo differente allo stesso evento a seconda dello stato in cui è in quel momento. Gli oggetti non sono l'unico elemento a cui uno state diagram può essere applicato (pensiamo agli attori, sottosistemi ecc..), gli state fiagram descrivono tutti gli eventi, stati e transizioni per un singolo oggetto.
 
 
-![state d diagram](../../assets/images/umlImg/state-d-description.png)
+![state d diagram](./assets/images/umlImg/state-d-description.png)
 
 
-![state diagram](../../assets/images/umlImg/state-machine-diagram-explained.webp)
+![state diagram](./assets/images/umlImg/state-machine-diagram-explained.webp)
 
 --- 
 # Sequence Diagram
@@ -199,5 +199,5 @@ loop simulano i loop;
 break segnalano una terminazione precoce tipicamente per i loop;
 
 
-![sequence diagram](../../assets/images/umlImg/Sequence-Diagram-Break-Communication-Fragment.png)
+![sequence diagram](./assets/images/umlImg/Sequence-Diagram-Break-Communication-Fragment.png)
 
