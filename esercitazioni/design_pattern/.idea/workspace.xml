@@ -14,8 +14,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="Interface" />
         <option value="package-info" />
+        <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -32,19 +33,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/emazz/OneDrive/Documenti/Workspace/GitHub/cose-da-studiare/esercitazioni/design_pattern&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/emazz/OneDrive/Documenti/Workspace/GitHub/cose-da-studiare/esercitazioni/design_pattern/src/main/java/creazionali/objectPool"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\emazz\OneDrive\Documenti\Workspace\GitHub\cose-da-studiare\esercitazioni\design_pattern\src\main\java\creazionali\objectPool" />
+      <recent name="C:\Users\emazz\OneDrive\Documenti\Workspace\GitHub\cose-da-studiare\esercitazioni\design_pattern\src\main\java\creazionali\factory" />
+      <recent name="C:\Users\emazz\OneDrive\Documenti\Workspace\GitHub\cose-da-studiare\esercitazioni\design_pattern\src\main\java\creazionali\converter" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\emazz\OneDrive\Documenti\Workspace\GitHub\cose-da-studiare\esercitazioni\design_pattern\src\main\java\creazionali\converter" />
       <recent name="C:\Users\emazz\OneDrive\Documenti\Workspace\GitHub\cose-da-studiare\esercitazioni\design_pattern\src\main\java\creazionali\abstractFactory" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="Application.Pool">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="creazionali.builder.App" />
       <module name="design_pattern" />
@@ -71,18 +78,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="main" />
+    <configuration name="CoinFactory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="creazionali.factory.CoinFactory" />
       <module name="design_pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="creazionali.factory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Pool" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="creazionali.objectPool.Pool" />
+      <module name="design_pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="creazionali.objectPool.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserConverter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="creazionali.converter.UserConverter" />
+      <module name="design_pattern" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="creazionali.converter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Pool" />
+        <item itemvalue="Application.CoinFactory" />
+        <item itemvalue="Application.UserConverter" />
         <item itemvalue="Application.App" />
         <item itemvalue="Application.ClientCode" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>

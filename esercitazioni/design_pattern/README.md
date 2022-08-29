@@ -6,6 +6,14 @@
 -[ ] Creazionali
   - [X] Abstract Factory
   - [X] Builder
+  - [X] Converter
+  - [X] Factory
+  - [X] Object Pool
+  - [ ] Prototype
+  - [ ] Registry
+  - [ ] Singleton
+  - [ ] Value Object
+
 
 -[ ] Comportamentali
 
