@@ -9,10 +9,10 @@
   - [X] Converter
   - [X] Factory
   - [X] Object Pool
-  - [ ] Prototype
-  - [ ] Registry
-  - [ ] Singleton
-  - [ ] Value Object
+  - [X] Prototype
+  - [X] Registry
+  - [X] Singleton
+  - [X] Value Object
 
 
 -[ ] Comportamentali

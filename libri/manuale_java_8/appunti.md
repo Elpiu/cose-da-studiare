@@ -1,6 +1,6 @@
 # Manuale di java 8
 
-### Pag. 32
+### Pag. 61
 
 
 ### Cosa c'è di nuovo in java 8 (o 1.8)
@@ -89,5 +89,21 @@ Package, Un package in Java permette di raggruppare in un'unica entità compless
 ---
 Modulo 3 
 
+Tipi di dati primitivi:
+* Tipi interi: byte, short, int, long
+* Tipi floating point: float e double
+* Tipo testuale: char
+* Tipo logico-booleano: boolean
+
+**final**, una variabile dichiarata final farà in modo che ogni tentativo di cambiare il valore di tale variabile produrrà un errore di compilazione. Quindi final è una costante.
+
+**static**, questo modificatore quando dichiariamo una variabile statica, tale variabile sarà condivisa da tutte le istanze di quella classe, anche chiamata "variabile di classe".
+
+
+## Passaggio di parametri per valore
+Il passaggio di aprametri in Java avviene sempre per valore. Quest'affermazione viene contraddetta in alcuni testi. Quando si invoca un metodo che prende in input una variabile, al metodo stesso viene passato solo il valore (una copia) della variabile, che quindi rimane immutata anche dopo l'esecuzione del metodo. La stessa cosa accade per i tipi reference: viene sempre passato il valore del reference, ovvero l'indirizzo in memoria. Il fatto che il passaggio avvenga sempre per valore garantisce che un oggetto possa essere modificato all'interno del metodo chiamato e contemporaneamente si è certi che dopo la chiamata del metodo il reference punti sempre allo stesso oggetto. 
+
+---
+Parte 2
 
 
