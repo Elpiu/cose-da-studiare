@@ -1,6 +1,6 @@
 # Manuale di java 8
 
-### Pag. 61
+### Pag. 114
 
 
 ### Cosa c'è di nuovo in java 8 (o 1.8)
@@ -106,4 +106,98 @@ Il passaggio di aprametri in Java avviene sempre per valore. Quest'affermazione 
 ---
 Parte 2
 
+La programmazione orientata agli oggetti è una scienza, o meglio una filosofia adattabile alla programmazione. Essa si basa su concetti esistenti nel mondo reale, con iquali abbiamo a che fare ogni giorno. L'astrazione di oggetti reali in classi fa superare la complessità della realtà. In questo modo possiamo osservare oggetti completamente differenti, riconoscendo il loro caratteristiche e funzionalità che li accomunano, associandoli quindi ad una stessa classe. 
 
+La programmazione ad oggetti inoltre, utilizzando il concetto di incapsulamento, rende i programmi composti da classi che nascondono i dettagli di implementazione dietro ad interfacce pubbliche, le quali permettono la comunicazione tra gli oggetti stessi che hanno parte del sistema. è favorito il riuso di codice già scritto anche grazie a concetti quali l'ereditarietà ed il polimorfismo.
+
+***Incapsulamento, ereditarietà, polimorfismo***
+
+Astrazione e riuso, l'astrazione potrebbe definirsi come l'arte di sapersi concentrare solo sui dettagli veramente essenziali nella descrizione di un'entità. 
+
+* Adoperiamo l'astrazione funzionale ogni volta che implementiamo un metodo. Infatti, tramite un metodo, riusciamo a portare all'interno di un'applicazione un concetto dinamico, sinonimo di azione, funzione. Per scrivere un metodo ci dovremmo limitare alla sua implementazione più robusta e chiara possibile.
+* Adoperiamo l'astrazione dei dati ogni volta che definiamo una classe, raccogliendo in essa solo le caratteristiche e le funzionalità essenziali degli oggetti che essa deve definire nel contesto in cui ci si trova.
+* Adoperiamo l'astrazione del sistema ogni volta che definiamo un'applicazione nei termini delle classi essenziali che devono soddisfare agli scopi dell'applicazione stessa.
+* Il riuso è invece da considerarsi una conseguenza dell'astrazione e degli altri paradigmi della programmazione ad oggetti (incapsulamento, ereditarietà e polimorfismo).
+  
+### Incapsulamento
+L'incapsulamento è la chiave della programmazione orientata agli oggetti. Tramite esso, una classe riesce ad acquisire caratteristiche di robustezza, indipendenza e riusabilità. Una qualsiasi classe è essenzialmente costituita da dati e metodo. La filosofia dell'incapsulamento è semplice. Essa si basa sull'accesso controllato ai dati mediante metodi che possono prevenire l'usura e la non correttezza. A livello di implementazione ciò si traduce semplicemente nel dichiarare privati gli attributi di una classe e quindi inacessibili fuori dalla classe stessa. L'accessi au dati potrà essere fornito da un'interfacca pubblica costituita da metodi dichiarati "public" e quindi accessibili da altre classi.
+
+
+Il modificatore static, con static la programmazione ad oggetti trova un punto di incontro con quella strutturata ed il suo uso deve essere quindi limitato a situazioni di reale e concreta utilità. potremmo tradurre static con "condiviso da tutte le istanze della classe" oppure "della classe".
+Potremmo usare static per marcare i metodi e gli attributi di una classe. Anche senza istanziare la classe, l'utilizzo di un membro static provocherà il caricamento in memoria della classe contenente il membro in questione, che quindi, condividerà il ciclo di vita con quello della classe.
+
+Un metodo dichiarato static e public può considerarsi una sorta di funzione e perciò questo tipo di approccio ai metodi dovrebbe essere evitato nella maggior parte dei casi. La creazione di un metodo statico dovrebbe essere limitato solo ai casi in cui l'esecuzione del metodo non dipenda dalle caratteristiche dell'oggetto su cui viene chiamato il metodo.
+Una variabile statica è condivisa a tutte le istanze dell'oggetto.
+
+---
+Modulo 6
+
+# Ereditarietà e interfacce
+
+Come tutti paradigmi che caratterizzano l'object orientation, anche il concetto di ereditarietà è ispirato a qualcosa che esiste nella realtà. Nel mondo reale noi classifichiamo tutto con classi e sottoclassi. Per esempio un cane è un animale, un aereo è un veicolo ecc.. In Java l'ereditarietà è una caratteristica che mette in relazione estensibilità più classi che hanno caratteristiche comuni. Il risultato immediato è la possibilità di ereditare codice già scritto.
+
+Il modificatore final può essere utilizzato non solo con le variabili, ma anche con classi e metodi per influire sull'ereditarietà. Una classe dichiarata final non potrà essere estesa, un metodo dichiarato final non può essere riscritto in una sottoclasse.
+
+Tutte le classi in Java estendono Object.
+Implementare l'ereditarietà quando si tratta di una relazione "è un".
+
+La parola chiave super, è un reference implicito all'intersezione tra l'oggetto corrente e la sua superclasse. In pratica questo reference ci permette di accedere ai componenti della siperclasse ed in particolare al costruttore.
+La parola chiave super è strettamente legata al costruttore della superclasse tramite una sintassi speciale che sfrutta il reference super.
+
+La chiamata al costruttore della superclasse mediante super() deve essere la prima istruzione di un costruttore e non potrà essere inserita all'interno di un metodo che non sia un costruttore.
+
+Un metodo astratto non implementa un proprio blocco di codice, e quindi è privo di comportamento. Questo metodo non potrà essere invocato ma potrà essere soggetto a riscrittura in uan sottoclasse.
+Una classe astratta non può essere istanziata.
+In Java non esiste propriamente quella che viene definita "ereditarietà multipla", una classe può estendere solo una lcasse per volta.
+
+Interfacce, dal punto di vista della proggettazione un'interfaccia è un'evoluzione del concetto di classe astratta. 
+
+Con Java 8 è possibile definire all'interno delle interfacce anche metodi statici. Altra novità di Java 8 è la possibilità di dichiarare metodi concreti all'interno delle interfacce. Si parla di metodi di default perchè vengono dichiarati usano come modificatore la parola chaive default.
+
+Differenze tra interfacce e classi astratte, non è possibile istanizare né classi astratte né interfacce. Inoltre il vantaggio comune che offrono sia le classi astratte sia le interfacce risiede nel fatto che esse possono obbligare le sottoclassi ad implementare comportamenti. Un'evidente differenza pratica tra i due conceetti è cosa possono definire. Un interfaccia può definire costanti statiche, metodi statici, metodi di default e metodi astratti. Una classe astratta è invce una classe noramle, che però non può essere istanziata e può contenere metodi astratti (ma questo non è necessario).
+
+
+---
+Il polimorfismo "in greco molte forme" è un altro concetto che dalla realtà è stato importato nelal programmazione ad oggetti. 
+
+Polimorfismo per metodi, ci permette di utilizzare lo stesso nome per metodi differenti. Java trova una realizzazione pratica sotto due forme: l'overload e l'override.
+
+In Java possono convivere metodi con lo stesso nome ma con differente firma. Su questo semplice concetto si fonda una delle implementazione più utilizzate di Java: l'overload, tramite esso il programmatore potrà utilizzare lo stesso nome per metodi diversi.
+
+L'override è invece considerato un'importantissima caratteristica della programmazione ad oggetti. L'override "riscrittura" è il termine object oriented che viene utilizzato per descrivere la caratteristicha, che hanno le sottoclassi, di ridefinire un metodo ereditato da una superclasse. Una sottoclasse è sempre più specifica della classe che estende, e quindi potrebbe ereditare metodi che hanno bisogno di essere ridefiniti per funzionare correttamente nel nuovo contesto.
+Le regole dell'override sono, il metodo riscritto nelal sottoclasse deve avere la stessa firma (nome e parametri) del metodo della superclasse. Il tipo di ritorno del metodo della sottoclasse deve coincidere con quello del metodo che si sta riscrivendo, o deve essere di un tipo che estende il tipo di ritono del metodo della superclasse. Il metodo ridefinito nelal sottoclasse non deve essere meno accessibile del metodo originale della sueprclasse.
+
+Le annotazioni permettono di annotare qualsiasi tipo di componente in un programma Java, dalle variabili ai metodi, dalle classi alle annotazioni stesse. Con il termine annotare intendiamo qualificare, marcare. Ovvero, se per esempio annotaimo una classe, consentiremo ad un software (per esempio il compilatore Java) di rendersi conto che tale calsse è stata marcata, cosicché potrà implementare un certo comportamento di conseguenza.
+
+L'operatore instanceof ci permette di tesare a quale tipo di istanza punta un reference. Tramite il casting possiamo risalire all'intervallo di puntamento dell'oggetto (l'accessibilità dell'oggetto). 
+
+---
+Eccezioni e asserzioni
+I concetti relativi ad eccezioni, errori ed asserzioni e le relative gestioni permettono allo svilupaptore di scrivere software robusto, in modo che funzioni correttamente anche in situazioni impreviste.
+
+Un'eccezione è una situazione imprevista che può presentarsi durante il flusso di un'applicazione. In Java è possibile gestirla utilizzando 5 semplici parole chaive: try, catch, finally, throw e throws. In Java è possibile definire le proprie eccezioni mediante la classe Exception e le sue sottoclassi. È anche possibile definire un errore, come una situazione imprevista non dipendente da un erroe commesso dallo sviluppatore. A differenza delle eccezioni gli errori non sono gestibili, questo concetto è implementato in Java mediante la classe Error e le sue sottoclassi.
+Infine è possibile definire un'asserzione come una condizione che deve essere verificata affinchè lo sviluppatore consideri corretta una parte di codice. A differenza delle eccezioni e gli errori, le asserzioni rappresentano uno strumento per testare la robustezza del software. SI possono abilitare in fase di sviluppo e test, e eventualmente disabilitare al rilascio. Questo concetto è implementato mediante la parola chiave assert. 
+
+Nella libreria standard di Java esiste una gerarchia di classi che mette in relazione la classe Exception e la classe Error. Entrambe queste classi estendono la superclasse Throwable.
+Un ulteriore categorizzazione delle eccezioni è data dalla divisione delle eccezioni in checked e unchecked exception. Ci si riferisce alle RuntimeException e le sue sottoclassi come unchecked exceptino, tutte le altre eccezioni vengono dette checked exception. Se si utilizza un metodo che lancia una checked exception senza gestirla da qualche parte, la compilazione non andrà a buon fine. Da qui il nome "eccezioni controllate".
+
+Non bisogna confondere il concetto di errore (problema che un programma non può risolvere) e di eccezione (problema non critico e gestibile). Il fatto che sia la classe Exception sia la classe Error estendano una classe che si chiama "lanciabile" (Throwable) è dovuto al meccanismo con cui la Java Virtual Machine reagisce quando si imabtte in una eccezione-errore.  Infatti, se il nostro programma genere un'eccezione durante il runtime, la JVM istanzia un oggetto della classe eccezione relativa al problema e lancia l'eccezione appena istanziata (tramite la parola chiave throw). Se il nostro codice non cattura (tramite la parola catch) l'eccezione, il gestore automatico della JVM interromperà il programma generando in output unformazioni dettagliate su ciò che è accaduto. Il meccanismo per la gestione delle eccezioni, come gia detto in precedenza, lo sviluppatore ha a disposizione alcuen aprole chiave per gestire le eccezioni: try, catch, finally, throw e throws. Se è necessario sviluppare una parte di codice che potenzialmente potrebbe scatenare un'eccezione, è possibile circondarla con un blocco try seguito da uno o più blocchi catch.
+
+Il blocco catch deve dichiarare un parametro (come se fosse un metodo) del tipo dell'eccezione che deve essere catturata. Come per i metodi anche il blocco catch possono essere polimorfi, per esempio Exception la superclasse da cui discende ogni altra eccezione gestirebbe qualsiasi eccezione.
+I blocchi catch vanno dichiarati dal meno generico al più generico, inoltre è possibile inserire più di un parametro all'interno separato dal carattere "|". È possibile far eseguire un altro blocco definendo la parola finally a seguito dei blocchi try e catch. Questo blocco viene eseguito in qualsiasi caso, sia se viene lanciata l'eccezione sia se non viene lancaita. Per esempio è possibile utilizzare un blocco finally quando esistono operazioni critiche che devono essere eseguite in qualsiasi caso. 
+
+Try with resources, questo meccanismo dalla versione 7 di Java è stato rivisto per alcune classi. Questo permette la chiusura automatica degli oggetti che necessiterebbero di essere chiusi, una volta utilizzati. La sintassi prevede la dichiarazione dell'oggetto o oggetti da chiudere automaticament eocme parametri del blocco try. 
+
+```Java
+try (Scanner scanner = new Scanner(new File("test.txt"))) {
+    while (scanner.hasNext()) {
+        System.out.println(scanner.nextLine());
+    }
+} catch (FileNotFoundException fnfe) {
+    fnfe.printStackTrace();
+}
+```
+
+L'utilizzo di questo costrutto è permesso utilizzano tutte le classi che implementano l'interfaccia AutoClosable o l'interfaccia Closable.
+
+# 8.5 eccezioni personalizzate e propagazioen dell'eccezione
