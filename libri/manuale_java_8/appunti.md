@@ -1,6 +1,6 @@
 # Manuale di java 8
 
-### Pag. 114
+### Pag. 140
 
 
 ### Cosa c'è di nuovo in java 8 (o 1.8)
@@ -200,4 +200,36 @@ try (Scanner scanner = new Scanner(new File("test.txt"))) {
 
 L'utilizzo di questo costrutto è permesso utilizzano tutte le classi che implementano l'interfaccia AutoClosable o l'interfaccia Closable.
 
-# 8.5 eccezioni personalizzate e propagazioen dell'eccezione
+# Eccezioni e propagazione dell'eccezione
+Alcune tipologie di eccezioni che sono più frequenti:
+- NullPonterExceotion: probabilmente la più frequente tra le eccezioni. Viene lanciata dallaJVM quando per esempio viene chiamato un metodo su di un referenxe che invece punta a null.
+- ArrayIndexOutOfBoundsException: questa eccezione viene lanciata quando si prova ad accedere ad un indice di un array troppo alto o minore di zero.
+- ClassCastException: eccezione particolarmente insidiosa. Viene lanciata a runtime quando si prova ad effettuare un cast verso un tipo di classe sbagliato.
+  
+Per definire nuovi tipi di eccezioni, la soluzione sarà estendere la clase exception o una delle sue sottoclassi. 
+La propagazione delle eccezioni permette di rilanciare indietro una eccezione generata o eventualmente passata, la keyword throws nella firma del metodo seguita dal tipo di eccezione. Le checked exception devono essere per forza gestite per poter compilare, mentre le unchecked no, dato che si presentano solo al runtime.
+
+
+# Caratteristiche avanzate Parte III
+
+Una classe innestata (o anche classe interna nel caso non sia dichiarata statica) non è altro che una classe definita all'interno di un'altra classe.
+
+Le classi anonime sono classi innestate, ma senza nome. La dichiarazione di una classe anonima richiede anche, contestualmente alla dichiarazione della classe venga anche istanziato un suo oggetto.
+
+Tipi enumerativi, gli enumerated types o enum, si trattano di una tipologia di struttura dati, che si aggiunge alle classi, alle interfacce ed alle annotazioni. 
+```Java
+public enum MiaEnumerazione {
+    UNO, DUE, TRE
+}
+```
+abbiamo definito un'enum di nome MiaEnumerazione, definendo tre suo elementi detti anche valori, che si chiamano UNO, DUE, TRE.
+In pratica è come se avessimo definito un nuovo tipo. Infatti l'enumerazione viene trasformata dal compilatore in una classe che estende la classe astratta Enum. Gli elementi di questa enum sono implicitamente di tipo MiaEnumerazioen e quindi non va specificato il tipo. Si trattano di costanti statiche. Un enum non si può estendere né può estendere un'altra enum o un'altra classe. Le enum vengono estese direttamente dal compilatore, ereditando dalla classe java.lang.Enum diversi metodi (come per esempio il toString()) definito in modo tale da restituire il nome dell'elemento.
+
+In un' enum è possibile anche creare variabili, metodi e costruttori. I costruttori però sono implicitamentete dichiarati private non è possbile utilizzarli se non nell'ambito dell'enumerazione stessa. 
+
+Le enum sono consigliate quando bisogna dichiarare un numero finito di valori da utilizzare per gestire il flusso di un'applicazione.
+
+## Tipi generici
+
+
+
