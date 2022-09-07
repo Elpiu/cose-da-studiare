@@ -14,8 +14,10 @@
   - [X] Singleton
   - [X] Value Object
 
-
 -[ ] Comportamentali
+  -[X] Chain of responsibility
+  -[X] Command
+
 
 
 -[ ] Strutturali

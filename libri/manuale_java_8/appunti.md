@@ -231,5 +231,15 @@ Le enum sono consigliate quando bisogna dichiarare un numero finito di valori da
 
 ## Tipi generici
 
+Con i generici la programmazione diventa più potente e robusta. Quando dichiariamo una classe (o un'interfaccia) possiamo renderla generica aggiungendo alla definizione uno o più tipi parametro. La sintassi fa uso di parantesi angolari che circondano gli identificatori dei tipi.
+
+I Generics offrono la loro più classica utilità quando si usano classi e interfacce del framework Collection. 
+
+```Java
+public Interface List<E> extends Collection<E>
+```
+Il tipo E non è un tipo esistente, ma solo un identificatore generico sostituibile con qualsiasi altro tipo. Per convenzione quando si dichiara un tipo generico si usa un identificatore costituito da una sola lettera maiuscola, che dovrebbe rappresentare l'iniziale di un nome simbolico.
+
+Una Map è una collezione che associa chiavi ai suoi elementi. Le mappe non possono contere chaivi duplicate ed ogni chiave può essere associata ad un solo valore. Le mappe sono molto diverse dalle liste. Non sono ordinate ma consentono un accesso in lettura (grazie alla chiave) più veloce rispetto ad una lista.
 
 
