@@ -1,6 +1,6 @@
 # Manuale di java 8
 
-### Pag. 140
+### Pag. 179 12.3 Annotazioni Standard
 
 
 ### Cosa c'è di nuovo in java 8 (o 1.8)
@@ -241,5 +241,35 @@ public Interface List<E> extends Collection<E>
 Il tipo E non è un tipo esistente, ma solo un identificatore generico sostituibile con qualsiasi altro tipo. Per convenzione quando si dichiara un tipo generico si usa un identificatore costituito da una sola lettera maiuscola, che dovrebbe rappresentare l'iniziale di un nome simbolico.
 
 Una Map è una collezione che associa chiavi ai suoi elementi. Le mappe non possono contere chaivi duplicate ed ogni chiave può essere associata ad un solo valore. Le mappe sono molto diverse dalle liste. Non sono ordinate ma consentono un accesso in lettura (grazie alla chiave) più veloce rispetto ad una lista.
+
+
+# Definizione di annotazione (metadato)
+Tre tipi di annotazioni
+
+* Annotazioni ordinarie
+* Annotazioni a valore
+* Annotazioni marcatrici
+  
+
+
+Annotare Annotazioni
+Nel package java.lang.annotation sono definite sei meta-annotazioni.
+Retention, Target, Documented, Inherited, Native e Repeatable.
+
+Targhet, il suo scopo è specificare gli elementi del linguaggio a cui è applicabile l'annotazione che si sta definendo. 
+
+Retention, specifica come deve essere conservata dall'ambiente Java l'annotazione a cui viene applicata.
+In base al valore di RetentionPolicy (SOURCE, l'annotazione è eliminata dal compilatore; CLASS l'annotazione viene conservata anche nel file . class ma ignorata dalla JVM; RUNTIME l'annotazione viene cosnervata anche nel file . class e letta dalla JVM).
+
+Documented, include nella documentazione generata da Javadoc anche le annotazioni a cui è applicata.
+
+Inherited, questa annotazione permette alle annotazioni applicate a classi (e solo a classi) di essere ereditate.
+
+Repeatable, necessaria quando bisogna annotare più volte con la stessa annotazione un elemento.
+
+
+
+
+
 
 

@@ -33,4 +33,13 @@ public class Podio <P,S,T>{
     public void setTerzo(T terzo) {
         this.terzo = terzo;
     }
+
+    @Override
+    public String toString() {
+        return "Podio{" +
+                "primo=" + primo +
+                ", secondo=" + secondo +
+                ", terzo=" + terzo +
+                '}';
+    }
 }

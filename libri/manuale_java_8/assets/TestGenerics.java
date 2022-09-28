@@ -1,7 +1,7 @@
 public class TestGenerics {
 
     public static void main(String[] args) {
-        Podio<Aereo,Treno,Macchina> podio
+        Podio<Aereo,Treno,Macchina> podio;
     }
 
 

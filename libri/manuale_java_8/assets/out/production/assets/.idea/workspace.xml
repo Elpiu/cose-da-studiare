@@ -36,9 +36,23 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/emazz/OneDrive/Documenti/Workspace/GitHub/cose-da-studiare/libri/manuale_java_8/assets&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Videoteca">
+  <component name="RunManager" selected="Application.TestMetodoGenerico">
     <configuration name="PassaggioParametri" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PassaggioParametri" />
+      <module name="assets" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SwitchConEnum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SwitchConEnum" />
+      <module name="assets" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMetodoGenerico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestMetodoGenerico" />
       <module name="assets" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -60,6 +74,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TestMetodoGenerico" />
+        <item itemvalue="Application.SwitchConEnum" />
         <item itemvalue="Application.Videoteca" />
         <item itemvalue="Application.PassaggioParametri" />
         <item itemvalue="Application.Varargs" />
