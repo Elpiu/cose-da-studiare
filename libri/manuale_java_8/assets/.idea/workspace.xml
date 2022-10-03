@@ -13,8 +13,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -37,23 +37,9 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/emazz/OneDrive/Documenti/Workspace/GitHub/cose-da-studiare/libri/manuale_java_8/assets&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.AnnotazioneProva">
+  <component name="RunManager" selected="Application.Testmain">
     <configuration name="AnnotazioneProva" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AnnotazioneProva" />
-      <module name="assets" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SwitchConEnum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SwitchConEnum" />
-      <module name="assets" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestMetodoGenerico (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="TestMetodoGenerico" />
       <module name="assets" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -73,13 +59,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Testmain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pack_G_thread.Testmain" />
+      <module name="assets" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pack_G_thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UtilPackageTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="UtilPackageTest" />
+      <module name="assets" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Testmain" />
+        <item itemvalue="Application.UtilPackageTest" />
         <item itemvalue="Application.AnnotazioneProva" />
         <item itemvalue="Application.TestSystemPack" />
         <item itemvalue="Application.TestMetodoGenerico" />
-        <item itemvalue="Application.TestMetodoGenerico (1)" />
-        <item itemvalue="Application.SwitchConEnum" />
       </list>
     </recent_temporary>
   </component>

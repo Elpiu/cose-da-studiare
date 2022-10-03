@@ -1,0 +1,5 @@
+#Updating...
+#Mon Oct 03 12:25:01 CEST 2022
+AI_Difficultiy=Low
+Music_Type=Neomelodic
+TextureQuality=Height

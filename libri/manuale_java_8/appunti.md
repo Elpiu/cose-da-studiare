@@ -1,6 +1,6 @@
 # Manuale di java 8
 
-### Pag. 179 12.3 Annotazioni Standard
+### Pag. 201 pag14 
 
 
 ### Cosa c'è di nuovo in java 8 (o 1.8)
@@ -266,6 +266,25 @@ Documented, include nella documentazione generata da Javadoc anche le annotazion
 Inherited, questa annotazione permette alle annotazioni applicate a classi (e solo a classi) di essere ereditate.
 
 Repeatable, necessaria quando bisogna annotare più volte con la stessa annotazione un elemento.
+
+---
+
+Package java.util e Data-Time-API
+
+Il package util è stato creato per fornire classi di utilità.
+
+La classe Properties rappresenta un insieme di proprietà che possono essere salvate in un file.
+Estende la classe Hashtable e ne eredita i metodi, con i metodi load e store.
+
+
+Date-Time API
+![alt](assets/Immagine%202022-10-03%20143429.png)
+
+
+---
+Gestione dei thread
+
+
 
 
 

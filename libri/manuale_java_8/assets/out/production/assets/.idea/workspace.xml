@@ -14,6 +14,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -36,9 +37,9 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/emazz/OneDrive/Documenti/Workspace/GitHub/cose-da-studiare/libri/manuale_java_8/assets&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.TestMetodoGenerico">
-    <configuration name="PassaggioParametri" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="PassaggioParametri" />
+  <component name="RunManager" selected="Application.AnnotazioneProva">
+    <configuration name="AnnotazioneProva" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AnnotazioneProva" />
       <module name="assets" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -51,6 +52,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestMetodoGenerico (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestMetodoGenerico" />
+      <module name="assets" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestMetodoGenerico" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="TestMetodoGenerico" />
       <module name="assets" />
@@ -58,15 +66,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Varargs" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Varargs" />
-      <module name="assets" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Videoteca" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Videoteca" />
+    <configuration name="TestSystemPack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="TestSystemPack" />
       <module name="assets" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -74,11 +75,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AnnotazioneProva" />
+        <item itemvalue="Application.TestSystemPack" />
         <item itemvalue="Application.TestMetodoGenerico" />
+        <item itemvalue="Application.TestMetodoGenerico (1)" />
         <item itemvalue="Application.SwitchConEnum" />
-        <item itemvalue="Application.Videoteca" />
-        <item itemvalue="Application.PassaggioParametri" />
-        <item itemvalue="Application.Varargs" />
       </list>
     </recent_temporary>
   </component>
